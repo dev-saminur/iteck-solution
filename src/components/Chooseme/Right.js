@@ -10,7 +10,7 @@ const Right = () => {
   return (
     <>
       <div>
-        <p className="text-sm text-white font-normal mb-[60px] lg:pr-[380px] leading-6">
+        <p className="text-sm text-white font-normal mb-[60px] lg:pr-32 xl:pr-[380px] leading-6">
           WE CREATE DIFFERENTIATED VALUE TO RISE TO THE TOP IN THIS FIELD
         </p>
         <div>
@@ -22,8 +22,9 @@ const Right = () => {
               <Headings
                 title="Affordable Price
 "
+                className="text-lg md:text-2xl"
               />
-              <p className="text-white text-[13px] font-normal lg:pr-[350px] mt-2">
+              <p className="text-white text-[13px] font-normal lg:pr-24 xl:pr-[350px] mt-2">
                 our top-notch Experts with much years of experience certail will
                 give best solutions for your business
               </p>
@@ -35,8 +36,11 @@ const Right = () => {
               <Image src={Ch2} alt="chimg" />
             </div>
             <div>
-              <Headings title="Top-Notch Experts Consulting" />
-              <p className="text-white text-[13px] font-normal lg:pr-[350px] mt-2">
+              <Headings
+                title="Top-Notch Experts Consulting"
+                className="text-lg md:text-2xl"
+              />
+              <p className="text-white text-[13px] font-normal lg:pr-24  xl:pr-[350px] mt-2">
                 Our top-notch Experts with much years of experience certail will
                 give best solutions for your business
               </p>
@@ -47,8 +51,11 @@ const Right = () => {
               <Image src={Ch3} alt="chimg" />
             </div>
             <div>
-              <Headings title="Dedicated Support 24/7" />
-              <p className="text-white text-[13px] font-normal lg:pr-[350px] mt-2">
+              <Headings
+                title="Dedicated Support 24/7"
+                className="text-lg md:text-2xl"
+              />
+              <p className="text-white text-[13px] font-normal lg:pr-24  xl:pr-[350px] mt-2">
                 Customer support is always our number one priority.
               </p>
             </div>
