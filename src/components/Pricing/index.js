@@ -28,7 +28,7 @@ const Pricing = () => {
               </Link>{" "}
               for information about more enterprise options
             </p>
-            <div className="absolute top-[10%] left-[-11%]">
+            <div className="absolute top-[10%] lg:left-[-11%]">
               <Image
                 loading="lazy"
                 src={PriceL}
@@ -36,7 +36,7 @@ const Pricing = () => {
                 className="animate-new-animation	2s linear infinite"
               />
             </div>
-            <div className="absolute top-[10%] right-[-11%]">
+            <div className="absolute top-[10%] lg:right-[-11%]">
               <Image loading="lazy" src={PriceR} alt="PricingPlane" />
             </div>
           </div>

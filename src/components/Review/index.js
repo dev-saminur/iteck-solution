@@ -113,14 +113,14 @@ const Review = () => {
               ))}
             </Slider>
           </div>
-          <div className="absolute top-0 left-[-11%]  animate-bounce animate-infinite animate-duration-[8000ms] animate-delay-400 animate-ease-in-out animate-alternate animate-fill-both">
+          <div className="absolute top-0 lg:left-[-11%]  animate-bounce animate-infinite animate-duration-[8000ms] animate-delay-400 animate-ease-in-out animate-alternate animate-fill-both">
             <Image
               src={ReviewShape}
               alt="Review"
               className="animate-new-animation	2s linear infinite"
             />
           </div>
-          <div className="absolute top-0 right-[-11%] animate-bounce animate-infinite animate-duration-[8000ms] animate-delay-500 animate-ease-in-out animate-alternate animate-fill-both">
+          <div className="absolute top-0 lg:right-[-11%] animate-bounce animate-infinite animate-duration-[8000ms] animate-delay-500 animate-ease-in-out animate-alternate animate-fill-both">
             <Image src={ReviewShaper} alt="Review" />
           </div>
         </div>

@@ -14,7 +14,7 @@ const PricingTable = () => {
 
   return (
     <div>
-      <div className="w-[945px] mx-auto">
+      <div className="max-w-[945px] mx-auto">
         <div className="text-center flex items-center justify-center mb-5">
           <p className="text-sm text-white">Billed monthly</p>
           <div onClick={() => setShow(!show)} className="mx-2">

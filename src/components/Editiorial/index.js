@@ -26,7 +26,7 @@ const Editiorial = () => {
           <div className="text-center z-50  mb-[70px]">
             <Heading className="text-canter z-50" title="Editiorial" />
           </div>
-          <div className="w-[1065px] z-50 mx-auto px-10">
+          <div className="max-w-[1065px] z-50 mx-auto px-10">
             <Flex className="justify-between z-50">
               <div>
                 <Editileft />

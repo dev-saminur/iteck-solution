@@ -17,7 +17,7 @@ const Footer = () => {
           <div className="col-start-3 col-end-11 ">
             <FooterMenu />
           </div>
-          <div className="col-start-11 col-end-[-1] text-end">
+          <div className="col-start-11 col-end-[-1] lg:text-end">
             <FooterRight />
           </div>
         </div>

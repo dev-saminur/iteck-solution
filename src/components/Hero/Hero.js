@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import "../../app/globals.css";
 import Container from "../helpers/Container/Container";
 import { FaCirclePlay } from "react-icons/fa6";
 import HeroImg from "../../../public/assets/header_2.png";
@@ -15,10 +14,10 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <div>
-      <div className="relative overflow-hidden  py-[110px]  bg-gradient-to-b from-[#126690]  to-[#020045] ">
+      <div className="relative overflow-hidden py-4 lg:py-6 xl:py-[110px] bg-[#01004C] lg:bg-gradient-to-b from-[#126690]  to-[#020045] ">
         <Container>
           <div className="relative z-50">
-            <h1 className=" text-[123px] tracking-[75px] uppercase font-bold text-white text-center">
+            <h1 className="text-[100px]  md:text-[123px]  tracking-[16px] md:tracking-[50px] lg:tracking-[75px] uppercase font-bold text-white text-center">
               Iteck
             </h1>
             <p className="text-xl font-light text-white uppercase text-center leading-10">
@@ -28,14 +27,24 @@ const Hero = () => {
             <div className="mt-[100px] flex justify-center ">
               <FaCirclePlay className="text-6xl text-[#15F1FF]" />
             </div>
-            <div className="pt-[200px] pb-[70px]">
-              <Flex className="px-[110px] justify-between items-center">
-                <Image src={serImg1} alt="service " />
-                <Image src={serImg2} alt="service " />
-                <Image src={serImg3} alt="service " />
-                <Image src={serImg4} alt="service " />
-                <Image src={serImg5} alt="service " />
-              </Flex>
+            <div className="pt-20 pb-10 lg:pt-[200px] lg:pb-[70px] ">
+              <div className="grid grid-cols-12 items-center	justify-items-center	">
+                <div className="col-start-2 col-end-4">
+                  <Image src={serImg1} alt="service " />
+                </div>
+                <div className="col-start-4 col-end-6">
+                  <Image src={serImg2} alt="service " />
+                </div>
+                <div className="col-start-6 col-end-8">
+                  <Image src={serImg3} alt="service " />
+                </div>
+                <div className="col-start-8 col-end-10">
+                  <Image src={serImg4} alt="service " />
+                </div>
+                <div className="col-start-10 col-end-[-1]">
+                  <Image src={serImg5} alt="service " />
+                </div>
+              </div>
             </div>
             <div className="text-center">
               <h4 className="text-2xl font-semibold leading-9 text-white  pb-10">
@@ -43,7 +52,7 @@ const Hero = () => {
                 Infrastructure & Solve Various Infrastructure-Specific <br />{" "}
                 Issues A Business May Face.
               </h4>
-              <p className="text-base font-normal  text-white  px-[190px] leading-8 mb-10">
+              <p className="text-lg md:text-base font-normal  text-white px-3 lg:px-[190px] leading-8 mb-14 lg:mb-10">
                 Iteck Co Is The Partner Of Choice For Many Of The Worlds Leading{" "}
                 <br />
                 Enterprises, SMEs And Technology Challengers. We Help Businesses
@@ -52,7 +61,7 @@ const Hero = () => {
               </p>
               <Link
                 href="#"
-                className="text-xs  text-white py-3 px-6 border rounded-full hover:border-[#010049] hover:bg-[#010049] transition-all ease-in after:duration-300"
+                className="text-base md:text-xs  text-white py-3 px-6 border rounded-full hover:border-[#010049] hover:bg-[#010049] transition-all ease-in after:duration-300"
               >
                 More About us
               </Link>
@@ -60,7 +69,7 @@ const Hero = () => {
           </div>
         </Container>
         <div
-          className="w-[110%]   absolute bottom-[45%] right-[-10px] h-full
+          className="w-[110%]   absolute bottom-4 xl:bottom-[25%] md:right-[-20px] lg:right-[-41px] xl:right-[-30px] h-full
          bg-center bg-cover bg-no-repeat"
         >
           <Image
