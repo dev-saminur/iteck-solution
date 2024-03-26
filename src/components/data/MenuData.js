@@ -5,7 +5,7 @@ export const FooterMenuData = [
   },
   {
     title: "About",
-    link: "/",
+    link: "/pages/about",
   },
   {
     title: "Service",

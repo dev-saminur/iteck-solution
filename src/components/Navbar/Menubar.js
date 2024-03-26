@@ -5,10 +5,11 @@ import Listitem from "../helpers/Listitem/Listitem";
 import Link from "next/link";
 import Pages from "./Pages";
 import Homepages from "./Homepages";
+
 const Menubar = () => {
   return (
     <>
-      <div className="w-3/5 z-50">
+      <div className="w-3/5 z-50 ">
         <List className="relative z-50">
           <Flex className="items-center justify-center">
             <Listitem className=" group flex   relative text-white   text-xs">
@@ -56,7 +57,7 @@ const Menubar = () => {
             <Listitem className=" relative text-white   text-xs">
               <Link
                 className="relative hover:bg-[#348CB2] uppercase font-medium  p-8 hover:border-b hover:border-[#14E9F7] transition-all ease-in after:duration-300"
-                href="/portfolio"
+                href="#"
               >
                 Portfolio
               </Link>

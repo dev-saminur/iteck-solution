@@ -33,9 +33,9 @@ module.exports = {
         "hero-image": "url('/public/')",
         "footer-texture": "url('/img/footer-texture.png')",
       },
-      Width: {
-        container: "1140px",
-      },
+      // Width: {
+      //   container: "1140px",
+      // },
       fontFamily: {
         dmSans: ["DM Sans", "sans-serif"],
       },

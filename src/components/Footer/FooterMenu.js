@@ -17,6 +17,7 @@ const FooterMenu = () => {
                 className="text-[13px] text-white font-medium  uppercase  mx-6 hover:text-[#084AB6]  transition-all ease-in after:duration-300"
               >
                 {item.title}
+              
               </Link>
             </Listitem>
           ))}
