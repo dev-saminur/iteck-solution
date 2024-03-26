@@ -69,7 +69,7 @@ const Hero = () => {
           </div>
         </Container>
         <div
-          className="w-[110%]   absolute bottom-4 xl:bottom-[25%] md:right-[-20px] lg:right-[-41px] xl:right-[-30px] h-full
+          className="w-[110%]   absolute bottom-4 xl:bottom-[25%] right-[-15px] md:right-[-20px] lg:right-[-41px] xl:right-[-30px] h-full
          bg-center bg-cover bg-no-repeat"
         >
           <Image
