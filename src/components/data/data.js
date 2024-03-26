@@ -103,7 +103,7 @@ export const ReviewData = [
   {
     image: ReviewImg2,
     title:
-      " “We encountered a problem with processing big data and after only 1week, Itecks Experts provided perfect IT solutions, fast process & affordable price. We are really satisfied!”",
+      " “We encountered a problem with processing big data and  Itecks Experts provided perfect IT solutions, fast process & affordable price. We are really satisfied!”",
 
     buyer: "Conor M.",
     position: " / Senior Marketing Amazon",
