@@ -18,13 +18,13 @@ const Review = () => {
     fade: true,
     arrows: false,
     infinite: true,
-    speed: 2500,
+    speed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
     waitForAnimate: false,
     adaptiveHeight: true,
     autoplay: true,
-    autoplaySpeed: 2500,
+    autoplaySpeed: 3000,
     beforeChange: (prev, next) => {
       setDotActive(next);
       setDotActive(prev);
@@ -82,11 +82,11 @@ const Review = () => {
           <div className="text-center mb-[70px]">
             <Heading title="Reviews" />
           </div>
-          <div className="slider-container w-[660px] mx-auto ">
+          <div className="slider-container lg:w-[660px] mx-auto">
             <Slider {...settings}>
               {ReviewData.map((item, i) => (
-                <div className="w-[660px] text-center">
-                  <h5 className="text-xl text-white text-center animate-jump-in animate-duration-5000 animate-ease-linear">
+                <div className="max-w-[660px] text-center">
+                  <h5 className="text-xl text-white text-center px-24 lg:px-0">
                     {item.title}
                   </h5>
                   <div className="text-center flex justify-center mt-10 mb-7">
@@ -113,15 +113,19 @@ const Review = () => {
               ))}
             </Slider>
           </div>
-          <div className="absolute top-0 lg:left-[-11%]  animate-bounce animate-infinite animate-duration-[8000ms] animate-delay-400 animate-ease-in-out animate-alternate animate-fill-both">
+          <div className="absolute top-0 left-[-15%] lg:left-[-11%] 0 animate-bounce animate-infinite animate-duration-[8000ms] animate-delay-400 animate-ease-in-out animate-alternate animate-fill-both">
             <Image
               src={ReviewShape}
               alt="Review"
-              className="animate-new-animation	2s linear infinite"
+              className="scale-50 lg:scale-100"
             />
           </div>
-          <div className="absolute top-0 lg:right-[-11%] animate-bounce animate-infinite animate-duration-[8000ms] animate-delay-500 animate-ease-in-out animate-alternate animate-fill-both">
-            <Image src={ReviewShaper} alt="Review" />
+          <div className="absolute top-0 right-[-15%] lg:right-[-11%] animate-bounce animate-infinite animate-duration-[8000ms] animate-delay-500 animate-ease-in-out animate-alternate animate-fill-both">
+            <Image
+              src={ReviewShaper}
+              alt="Review"
+              className="scale-50 lg:scale-100"
+            />
           </div>
         </div>
       </Container>
