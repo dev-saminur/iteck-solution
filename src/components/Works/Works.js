@@ -16,6 +16,43 @@ const Works = () => {
     slidesToShow: 2,
     slidesToScroll: 1,
     arrows: true,
+    responsive: [
+      {
+        breakpoint: 1536,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -24,11 +61,11 @@ const Works = () => {
         <Container>
           <div>
             <Heading title="Works" className="text-center mb-[70px] z-10" />
-            <div className="w-[1000px] mx-auto ">
+            <div className="max-w-[1000px] mx-auto ">
               <Slider {...settings}>
                 {WorksData.map((item, i) => (
                   <div key={i} className=" ml-[20px]">
-                    <div className="w-[457px] h-[316px] overflow-hidden rounded-md">
+                    <div className="max-w-[600px] max-h-[416px] lg:w-[457px] lg:h-[316px] overflow-hidden rounded-md">
                       <Image
                         src={item.workimg}
                         width={457}
