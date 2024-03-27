@@ -11,7 +11,7 @@ import Flex from "../helpers/Flex/Flex";
 const Editileft = () => {
   return (
     <>
-      <div className=" w-[450px]  z-50">
+      <div className=" w-[450px]  z-50 mb-10 lg:mb-0">
         <Image src={BlogImg} alt="BlogImg" className="w-full " />
         <Flex className="mt-4 items-center">
           <Link
