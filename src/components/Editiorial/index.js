@@ -27,7 +27,7 @@ const Editiorial = () => {
             <Heading className="text-canter z-50" title="Editiorial" />
           </div>
           <div className="max-w-[1065px] z-50 mx-auto px-10">
-            <Flex className="justify-between z-50">
+            <Flex className="flex-wrap lg:flex-nowrap lg:justify-between  z-50">
               <div>
                 <Editileft />
               </div>
@@ -46,7 +46,7 @@ const Editiorial = () => {
           </div>
         </div>
       </Container>
-      <div className="w-full  absolute top-0 left-0  ">
+      <div className="w-full hidden xl:block absolute top-0 left-0  ">
         <Image
           src={EditImage}
           alt="hero-img"
@@ -55,12 +55,6 @@ const Editiorial = () => {
           height="0"
           className="w-[110%]  "
         />
-        <h2 className="text-red-600">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          maiores suscipit alias dolores reiciendis eum, et natus non itaque,
-          aut a. Neque facilis rerum odio maiores reprehenderit aliquam corporis
-          odit!
-        </h2>
       </div>
     </div>
   );
