@@ -16,8 +16,8 @@ export default function Home() {
       <Service />
       <Chooseme />
       <Review />
-      {/* <Pricing />
-      <Editiorial /> */}
+      <Pricing />
+      <Editiorial />
       {/* <Contact /> */}
       {/* <Footer /> */}
     </>
