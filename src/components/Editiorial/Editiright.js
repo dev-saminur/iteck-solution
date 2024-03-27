@@ -10,7 +10,7 @@ import { RiMessage2Line } from "react-icons/ri";
 const Editiright = () => {
   return (
     <div>
-      <div className=" w-[515px]  pl-5 border-l border-solid border-white border-box">
+      <div className="max:w-[400px] lg:w-[515px]  pl-5 border-l border-solid border-white border-box">
         <Flex className="border-b border-solid border-white pb-5">
           <div className="w-[169px] h-[138px] rounded-md overflow-hidden mr-7">
             <Image
@@ -184,7 +184,7 @@ const Editiright = () => {
               </Link>
             </div>
             <div className="mt-[30px]">
-              <Flex className="justify-between">
+              <Flex className="lg:justify-between">
                 <div className="flex items-center gap-x-2">
                   <TbCircleLetterA className=" text-[#0d6efd] text-lg" />
                   <Link
