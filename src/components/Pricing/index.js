@@ -10,7 +10,7 @@ import PriceR from "../../../public/assets/shap_r.png";
 const Pricing = () => {
   return (
     <>
-      <div className="relative bg-gradient-to-b from-[#010049]  to-[#157aa6] py-[140px] border-b border-solid border-[#0F588C]">
+      <div className="relative overflow-hidden bg-gradient-to-b from-[#010049]  to-[#157aa6] py-[140px] border-b border-solid border-[#0F588C]">
         <Container>
           <div className="relative">
             <div className="text-center mb-[80px]">
@@ -28,20 +28,22 @@ const Pricing = () => {
               </Link>{" "}
               for information about more enterprise options
             </p>
-            <div className="absolute top-[10%] lg:left-[-11%]">
-              <Image
-                loading="lazy"
-                src={PriceL}
-                alt="PricingPlane"
-                className="animate-new-animation	2s linear infinite"
-              />
-            </div>
-            <div className="absolute top-[10%] lg:right-[-11%]">
-              <Image loading="lazy" src={PriceR} alt="PricingPlane" />
-            </div>
+
+            <Image
+              loading="lazy"
+              src={PriceL}
+              alt="PricingPlane"
+              className="absolute  top-[10%] left-[0%] "
+            />
+
+            <Image
+              loading="lazy"
+              src={PriceR}
+              alt="PricingPlane"
+              className="absolute  top-[10%] right-[0%]  "
+            />
           </div>
         </Container>
-        {/* <div className="bg-red-400 w-[800px] h-[800px] absolute top-0 left-0"></div> */}
       </div>
     </>
   );
