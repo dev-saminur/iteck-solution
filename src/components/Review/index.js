@@ -76,7 +76,7 @@ const Review = () => {
   };
 
   return (
-    <div className="bg-secondary py-[140px] border-y border-solid border-[#45447A]">
+    <div className="relative bg-secondary py-[140px] border-y border-solid border-[#45447A]">
       <Container>
         <div className="relative">
           <div className="text-center mb-[70px]">
@@ -113,22 +113,19 @@ const Review = () => {
               ))}
             </Slider>
           </div>
-          <div className="absolute top-0 left-[-15%] lg:left-[-11%] 0 animate-bounce animate-infinite animate-duration-[8000ms] animate-delay-400 animate-ease-in-out animate-alternate animate-fill-both">
-            <Image
-              src={ReviewShape}
-              alt="Review"
-              className="scale-50 lg:scale-100"
-            />
-          </div>
-          <div className="absolute top-0 right-[-15%] lg:right-[-11%] animate-bounce animate-infinite animate-duration-[8000ms] animate-delay-500 animate-ease-in-out animate-alternate animate-fill-both">
-            <Image
-              src={ReviewShaper}
-              alt="Review"
-              className="scale-50 lg:scale-100"
-            />
-          </div>
         </div>
       </Container>
+      <Image
+        src={ReviewShape}
+        alt="Review"
+        className="w-[35%] lg:w-1/4 absolute  top-[27%] translate-y-[20%]  left-[0%] lg:left-[0%] animate-bounce animate-infinite animate-duration-[8000ms] animate-delay-400 animate-ease-in-out animate-alternate animate-fill-both"
+      />
+
+      <Image
+        src={ReviewShaper}
+        alt="Review"
+        className="w-[35%] lg:w-1/4 absolute overflow-hidden top-[27%] translate-y-[20%] right-[0%] lg:right-[0%] animate-bounce animate-infinite animate-duration-[8000ms] animate-delay-500 animate-ease-in-out animate-alternate animate-fill-both"
+      />
     </div>
   );
 };
