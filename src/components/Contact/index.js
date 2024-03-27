@@ -42,7 +42,7 @@ const Contact = () => {
           </div>
         </div>
       </Container>
-      <div className="absolute bottom-[-600px] left-[50%] translate-x-[-50%] ">
+      <div className="absolute bottom-0 xl:bottom-[-600px] left-[50%] translate-x-[-50%] ">
         <Image
           src={ContimgAni}
           alt="contact-img-animation"
