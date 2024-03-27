@@ -33,14 +33,14 @@ const Pricing = () => {
               loading="lazy"
               src={PriceL}
               alt="PricingPlane"
-              className="absolute  top-[10%] left-[0%] "
+              className="absolute  top-[10%] left-[0%] lg:left-[-13%]"
             />
 
             <Image
               loading="lazy"
               src={PriceR}
               alt="PricingPlane"
-              className="absolute  top-[10%] right-[0%]  "
+              className="absolute  top-[10%] right-[0%]  lg:right-[-13%]"
             />
           </div>
         </Container>
