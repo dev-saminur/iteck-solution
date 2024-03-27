@@ -2,14 +2,17 @@ import React from "react";
 import Flex from "../helpers/Flex/Flex";
 import List from "../helpers/List/List";
 import Listitem from "../helpers/Listitem/Listitem";
-import Link from "next/link";
 import Pages from "./Pages";
 import Homepages from "./Homepages";
-
+import { IoSearchOutline, IoCartOutline } from "react-icons/io5";
+import { RiNumber2 } from "react-icons/ri";
+import Link from "next/link";
+import { FaBarsStaggered } from "react-icons/fa6";
 const Menubar = () => {
   return (
     <>
-      <div className="w-3/5 z-50 ">
+      <div className="hidden relative lg:block w-3/5 z-50 ">
+       
         <List className="relative z-50">
           <Flex className="items-center justify-center">
             <Listitem className=" group flex   relative text-white   text-xs">

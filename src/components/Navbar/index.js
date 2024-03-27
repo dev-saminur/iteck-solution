@@ -4,13 +4,16 @@ import Container from "../helpers/Container/Container";
 import Flex from "../helpers/Flex/Flex";
 import Logo from "../../../public/assets/logo_ll.png";
 import Image from "next/image";
-import Menubar from "./Menubar";
 import { IoSearchOutline, IoCartOutline } from "react-icons/io5";
 import { RiNumber2 } from "react-icons/ri";
-import Link from "next/link";
 import { FaBarsStaggered } from "react-icons/fa6";
-
+import List from "../helpers/List/List";
+import Listitem from "../helpers/Listitem/Listitem";
+import Pages from "./Pages";
+import Homepages from "./Homepages";
+import Link from "next/link";
 import "../../app/globals.css";
+import Menubar from "./Menubar";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -32,22 +35,24 @@ const Navbar = () => {
   }, []);
   return (
     <>
-      <div className="bg-[#157297]  relative">
+      <div className="bg-[#157297]  relative py-10 lg:py-0">
         <div className={showNav ? "navbar stickynav" : "navbar"}>
           <Container>
-            <Flex className="   items-center z-50">
+            <Flex className="   relative items-center z-50">
               <div className="w-1/5 z-50">
                 <Image src={Logo} alt="Logo" />
               </div>
-
-              <FaBarsStaggered className="lg:hidden block" />
-
+              <FaBarsStaggered
+                onClick={() => setShow(!show)}
+                className="absolute top-0 right-0 lg:hidden block text-white"
+              />
               <Menubar />
-              <div className="w-1/5 z-50">
-                <Flex className="justify-end items-center gap-x-9">
+
+              <div className=" hidden lg:block text-right z-50">
+                <Flex className=" justify-end items-center gap-x-9">
                   <div>
                     <Flex className="gap-x-3 ">
-                      <IoSearchOutline className="text-xl text-white" />
+                      <IoSearchOutline className="text-xl text-white " />
                       <div className="relative">
                         <IoCartOutline className="  text-xl text-white" />
                         <RiNumber2 className="text-lg absolute top-0 left-6 bg-[#14E9F7] text-black p-1 rounded-full" />
@@ -67,6 +72,96 @@ const Navbar = () => {
             </Flex>
           </Container>
         </div>
+        {show && (
+          <>
+            <List className=" w-[50%] relative z-50 mt-[70px] mx-10 block lg:hidden">
+              <Listitem className=" group    relative text-white  text-xs">
+                <Link
+                  href="#"
+                  className="relative bg-[#348CB2] uppercase font-medium  p-8 border-b border-[#14E9F7] transition-all ease-in after:duration-300"
+                >
+                  Homes
+                </Link>
+                <svg
+                  className=" h-5 w-5 text-white absolute top-[50%] translate-y-[-50%] right-2"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <Homepages />
+              </Listitem>
+              <Listitem className=" relative group text-white  my-8 text-xs">
+                <Link
+                  className="relative  hover:bg-[#348CB2] uppercase font-medium  p-8 hover:border-b hover:border-[#14E9F7] transition-all ease-in after:duration-300"
+                  href="#"
+                >
+                  Pages
+                </Link>
+                <svg
+                  className=" h-5 w-5 text-white absolute top-[50%] translate-y-[-50%] right-2"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <Pages />
+              </Listitem>
+              <Listitem className=" relative text-white  my-8 text-xs">
+                <Link
+                  className="relative hover:bg-[#348CB2] uppercase font-medium  p-8 hover:border-b hover:border-[#14E9F7] transition-all ease-in after:duration-300"
+                  href="#"
+                >
+                  Portfolio
+                </Link>
+              </Listitem>
+              <Listitem className=" relative text-white my-8  text-xs">
+                <Link
+                  className="relative hover:bg-[#348CB2] uppercase font-medium  p-8 hover:border-b hover:border-[#14E9F7] transition-all ease-in after:duration-300"
+                  href="#"
+                >
+                  Blog
+                </Link>
+              </Listitem>
+              <Listitem className=" relative text-white    text-xs">
+                <Link
+                  className="relative hover:bg-[#348CB2] uppercase font-medium p-8 hover:border-b hover:border-[#14E9F7] transition-all ease-in after:duration-300"
+                  href="#"
+                >
+                  Contact
+                </Link>
+              </Listitem>
+            </List>
+            <div className="w-[90%] mx-auto block lg:hidden text-right z-50 mt-10">
+              <Flex className=" justify-between items-center gap-x-9">
+                <Flex className="gap-x-3 ">
+                  <IoSearchOutline className="text-xl text-white " />
+                  <div className="relative">
+                    <IoCartOutline className="  text-xl text-white" />
+                    <RiNumber2 className="text-lg absolute top-0 left-6 bg-[#14E9F7] text-black p-1 rounded-full" />
+                  </div>
+                </Flex>
+
+                <Link
+                  href="#"
+                  className="text-xs text-white py-3 px-6 border rounded-full hover:border-[#010049] hover:bg-[#010049] transition-all ease-in after:duration-300"
+                >
+                  Free Quote
+                </Link>
+              </Flex>
+            </div>
+          </>
+        )}
       </div>
     </>
   );
