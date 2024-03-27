@@ -8,16 +8,15 @@ import { FooterMenuData } from "../data/MenuData";
 const FooterMenu = () => {
   return (
     <>
-      <div>
-        <List className="flex justify-center">
+      <div className="hidden lg:block">
+        <List className=" flex justify-center">
           {FooterMenuData.map((item, i) => (
             <Listitem key={i}>
               <Link
                 href={item.link}
-                className="text-[13px] text-white font-medium  uppercase  mx-6 hover:text-[#084AB6]  transition-all ease-in after:duration-300"
+                className="text-[13px] text-white font-medium  uppercase  mx-2 lg:mx-6 hover:text-[#084AB6]  transition-all ease-in after:duration-300"
               >
                 {item.title}
-              
               </Link>
             </Listitem>
           ))}
