@@ -8,8 +8,8 @@ import { FooterMenuData } from "../data/MenuData";
 const FooterMenu = () => {
   return (
     <>
-      <div className="hidden lg:block">
-        <List className=" flex justify-center">
+      <div className="my-10 lg:my-0">
+        <List className="flex  lg:flex lg:justify-center">
           {FooterMenuData.map((item, i) => (
             <Listitem key={i}>
               <Link

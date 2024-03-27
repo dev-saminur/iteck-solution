@@ -19,7 +19,7 @@ export default function Home() {
       <Pricing />
       <Editiorial />
       <Contact />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

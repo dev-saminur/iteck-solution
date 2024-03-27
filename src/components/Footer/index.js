@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="col-start-2 col-end-4 lg:col-start-1 lg:col-end-3 ">
             <Image src={Logo} alt="FooterLogo" />
           </div>
-          <div className="col-start-1 col-end-[-1] lg:col-start-3 lg:col-end-11 ">
+          <div className="col-start-2 col-end-11 lg:col-start-3 lg:col-end-11 ">
             <FooterMenu />
           </div>
           <div className="col-start-2 col-end-12 lg:col-start-11 lg:col-end-[-1] lg:text-end">

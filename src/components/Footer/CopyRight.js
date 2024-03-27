@@ -4,7 +4,7 @@ import React from "react";
 const CopyRight = () => {
   return (
     <>
-      <div className="hidden lg:block mt-[30px] text-center">
+      <div className="mt-[30px] text-center">
         <span className="text-[12px] text-[#8D8DAE] font-normal">
           © 2023 Copyrights by
           <Link
