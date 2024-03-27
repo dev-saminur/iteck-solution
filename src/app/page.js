@@ -11,7 +11,7 @@ import Service from "@/components/Service";
 export default function Home() {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <Hero />
       <Service />
       <Chooseme />
