@@ -43,19 +43,19 @@ export const ServiceData = [
 
 export const ServiceLink = [
   {
-    links: "Excommerce",
+    links: "Management",
   },
   {
-    links: "Consultation",
+    links: "Backup & Recovery",
   },
   {
-    links: "Landing Page",
+    links: "Transfer",
   },
   {
-    links: "Ios and Android",
+    links: "Storerage",
   },
   {
-    links: "MERN Stack",
+    links: "Hosting & VPS",
   },
 ];
 

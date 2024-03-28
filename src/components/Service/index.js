@@ -75,21 +75,21 @@ const Service = ({ children }) => {
     ),
     responsive: [
       {
-        breakpoint: 1536,
+        breakpoint: 1400,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 1280,
+        breakpoint: 1200,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 1024,
+        breakpoint: 992,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -103,9 +103,9 @@ const Service = ({ children }) => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 576,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
@@ -116,7 +116,10 @@ const Service = ({ children }) => {
       <div className="relative overflow-hidden py-[80px] bg-secondary">
         <Container>
           <div className="relative  z-50">
-            <Heading title="SERVICES" className="text-center mb-[70px] z-10" />
+            <Heading
+              title="SERVICES"
+              className="text-center mb-[70px]  font-xl z-10"
+            />
 
             <div className="slider-container ">
               <Slider {...settings} className="border-r border-[#020047]">
@@ -130,12 +133,12 @@ const Service = ({ children }) => {
                     </div>
                     <Headings title={item.title} />
                     <Peragraph peratitle={item.peragraph} />
-                    <Flex className="w-[312px] justify-center flex-wrap mx-auto">
+                    <Flex className="max-w-[312px] justify-center flex-wrap mx-auto">
                       {ServiceLink.map((data, i) => (
                         <Link
                           key={i}
                           href="#"
-                          className="text-[11px] m-[3px] text-white bg-secondary font-normal px-[7px] py-[3px] rounded"
+                          className="text-[11px] m-[3px] text-white bg-[#131172] font-normal  px-[7px] py-[3px] rounded"
                         >
                           {data.links}
                         </Link>

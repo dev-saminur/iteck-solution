@@ -26,6 +26,7 @@
   -o-transition: transform 500ms ease 500ms ease;
   -webkit-animation: sticky-nav 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
+
 @keyframes sticky-nav {
   0% {
     top: -10px;
@@ -37,5 +38,11 @@
   100% {
     top: 0%;
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .stickynav {
+    display: none;
   }
 }

@@ -33,18 +33,20 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <>
-      <div className="bg-[#157297]  relative py-10 lg:py-0">
-        <div className={showNav ? "navbar stickynav" : "navbar"}>
+      <div className="bg-gradient-to-l from-[#04A1FD]  to-[#0C46F5] lg:bg-gradient-to-l lg:from-transparent lg:to-trans lg:bg-[#157297]  lg:px-0 px-4  relative py-10 lg:py-0">
+        <div className={showNav ? "lg:navbar stickynav" : "navbar"}>
           <Container>
-            <Flex className="   relative items-center z-50">
-              <div className="w-1/5 z-50">
-                <Image src={Logo} alt="Logo" />
+            <Flex className=" lg:px-4 xl:px-0  relative items-center z-50">
+              <div className="w-2/5 lg:w-1/5 z-50">
+                <Image width={155} src={Logo} alt="Logo" />
               </div>
               <FaBarsStaggered
+                size={30}
                 onClick={() => setShow(!show)}
-                className="absolute top-0 right-0 lg:hidden block text-white"
+                className="absolute top-0 right-0 lg:hidden block  text-white "
               />
               <Menubar />
 
@@ -74,11 +76,11 @@ const Navbar = () => {
         </div>
         {show && (
           <>
-            <List className=" w-[50%] relative z-50 mt-[70px] mx-10 block lg:hidden">
+            <List className=" w-full relative z-50 mt-[70px] block lg:hidden">
               <Listitem className=" group    relative text-white  text-xs">
                 <Link
                   href="#"
-                  className="relative bg-[#348CB2] uppercase font-medium  p-8 border-b border-[#14E9F7] transition-all ease-in after:duration-300"
+                  className="relative block bg-gradient-to-l from-[#25B8FF]  to-[#2C5CF6] uppercase font-medium  p-8 border-b border-[#14E9F7] transition-all ease-in after:duration-300"
                 >
                   Homes
                 </Link>
@@ -96,9 +98,9 @@ const Navbar = () => {
                 </svg>
                 <Homepages />
               </Listitem>
-              <Listitem className=" relative group text-white  my-8 text-xs">
+              <Listitem className=" relative group text-white   text-xs">
                 <Link
-                  className="relative  hover:bg-[#348CB2] uppercase font-medium  p-8 hover:border-b hover:border-[#14E9F7] transition-all ease-in after:duration-300"
+                  className="relative block bg-gradient-to-l from-[#25B8FF]  to-[#2C5CF6] uppercase font-medium  p-8 hover:border-b border-[#14E9F7] transition-all ease-in after:duration-300"
                   href="#"
                 >
                   Pages
@@ -117,17 +119,17 @@ const Navbar = () => {
                 </svg>
                 <Pages />
               </Listitem>
-              <Listitem className=" relative text-white  my-8 text-xs">
+              <Listitem className=" relative text-white   text-xs">
                 <Link
-                  className="relative hover:bg-[#348CB2] uppercase font-medium  p-8 hover:border-b hover:border-[#14E9F7] transition-all ease-in after:duration-300"
+                  className="relative block bg-gradient-to-l from-[#25B8FF]  to-[#2C5CF6] uppercase font-medium  p-8 hover:border-b border-[#14E9F7] transition-all ease-in after:duration-300"
                   href="#"
                 >
                   Portfolio
                 </Link>
               </Listitem>
-              <Listitem className=" relative text-white my-8  text-xs">
+              <Listitem className=" relative text-white   text-xs">
                 <Link
-                  className="relative hover:bg-[#348CB2] uppercase font-medium  p-8 hover:border-b hover:border-[#14E9F7] transition-all ease-in after:duration-300"
+                  className="relative block bg-gradient-to-l from-[#25B8FF]  to-[#2C5CF6] uppercase font-medium  p-8 hover:border-b border-[#14E9F7] transition-all ease-in after:duration-300"
                   href="#"
                 >
                   Blog
@@ -135,7 +137,7 @@ const Navbar = () => {
               </Listitem>
               <Listitem className=" relative text-white    text-xs">
                 <Link
-                  className="relative hover:bg-[#348CB2] uppercase font-medium p-8 hover:border-b hover:border-[#14E9F7] transition-all ease-in after:duration-300"
+                  className="relative block bg-gradient-to-l from-[#25B8FF]  to-[#2C5CF6] uppercase font-medium  p-8 hover:border-b border-[#14E9F7] transition-all ease-in after:duration-300"
                   href="#"
                 >
                   Contact
