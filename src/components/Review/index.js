@@ -14,6 +14,45 @@ const Review = () => {
   const [dotActive, setDotActive] = useState(true);
 
   const settings = {
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+        },
+      },
+    ],
     dots: true,
     fade: true,
     arrows: false,
@@ -82,11 +121,11 @@ const Review = () => {
           <div className="text-center mb-[70px]">
             <Heading title="Reviews" />
           </div>
-          <div className="slider-container lg:w-[660px] mx-auto">
+          <div className="slider-container max-w-[660px] mx-auto ">
             <Slider {...settings}>
               {ReviewData.map((item, i) => (
                 <div className="max-w-[660px] text-center">
-                  <h5 className="text-xl text-white text-center px-24 lg:px-0">
+                  <h5 className="text-xl text-white text-center xl:px-[90px] sm:px-[40px] lg:px-0 leading-[1.7]">
                     {item.title}
                   </h5>
                   <div className="text-center flex justify-center mt-10 mb-7">
@@ -118,13 +157,13 @@ const Review = () => {
       <Image
         src={ReviewShape}
         alt="Review"
-        className="w-[35%] lg:w-1/4 absolute  top-[27%] translate-y-[20%]  left-[0%] lg:left-[0%] animate-bounce animate-infinite animate-duration-[8000ms] animate-delay-400 animate-ease-in-out animate-alternate animate-fill-both"
+        className="w-[20%]  absolute  top-[27%] translate-y-[20%]  left-[0%] lg:left-[0%] animate-bounce animate-infinite animate-duration-[8000ms] animate-delay-400 animate-ease-in-out animate-alternate animate-fill-both"
       />
 
       <Image
         src={ReviewShaper}
         alt="Review"
-        className="w-[35%] lg:w-1/4 absolute overflow-hidden top-[27%] translate-y-[20%] right-[0%] lg:right-[0%] animate-bounce animate-infinite animate-duration-[8000ms] animate-delay-500 animate-ease-in-out animate-alternate animate-fill-both"
+        className="w-[20%]   absolute overflow-hidden top-[27%] translate-y-[20%] right-[0%]  md:right-[0] lg:right-[0%] animate-bounce animate-infinite animate-duration-[8000ms] animate-delay-500 animate-ease-in-out animate-alternate animate-fill-both"
       />
     </div>
   );

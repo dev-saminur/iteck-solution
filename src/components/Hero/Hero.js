@@ -14,9 +14,9 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <div>
-      <div className="relative overflow-hidden py-[185px] bg-[#01004C] lg:bg-gradient-to-b from-[#126690]  to-[#020045] ">
+      <div className="relative  overflow-hidden py-[185px] bg-[#01004C] lg:bg-gradient-to-b from-[#126690]  to-[#020045] ">
         <Container>
-          <div className="relative z-50">
+          <div className="relative overflow-hidden z-50">
             <h1 className="text-[123px]  tracking-[75px] uppercase font-bold text-white text-center">
               Iteck
             </h1>
@@ -76,15 +76,17 @@ const Hero = () => {
           </div>
         </Container>
 
-        <Image
-          src={HeroImg}
-          alt="hero-img"
-          loading="lazy"
-          width="1478"
-          height="1486"
-          className="w-[110%] h-[115%]  absolute  bottom-[-5%] left-[-5%] 
+        <div className="w-[110%] h-[115%]  py-[100px] absolute  bottom-[-5%] left-[-5%] ">
+          <Image
+            src={HeroImg}
+            alt="hero-img"
+            loading="lazy"
+            width="1478"
+            height="1486"
+            className=" w-[110%] h-screen lg:h-full 
             bg-center bg-cover bg-no-repeat wave ] animate-wiggle animate-infinite animate-duration-[8000ms] animate-delay-300 animate-ease-in-out animate-alternate animate-fill-both"
-        />
+          />
+        </div>
 
         {/* <div className="bg-[#020045] py-[190px]"></div> */}
       </div>

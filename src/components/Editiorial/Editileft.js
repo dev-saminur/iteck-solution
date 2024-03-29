@@ -11,8 +11,13 @@ import Flex from "../helpers/Flex/Flex";
 const Editileft = () => {
   return (
     <>
-      <div className=" w-[450px]  z-50 mb-10 lg:mb-0">
-        <Image src={BlogImg} alt="BlogImg" className="w-full " />
+      <div className=" w-full p-4    lg:p-0 lg:w-[450px]  z-50 mb-10 lg:mb-0 lg:border-0 border border-solid  border-white">
+        <Image
+          width={1400}
+          src={BlogImg}
+          alt="BlogImg"
+          className="w-full h-full "
+        />
         <Flex className="mt-4 items-center">
           <Link
             href="#"
@@ -34,7 +39,7 @@ const Editileft = () => {
         <div className="mt-4 ">
           <Link
             href="#"
-            className="text-white text-2xl font-normal hover:text-[#0d6efd] ease-in-out duration-75  uppercase"
+            className="text-white text-base lg:text-2xl font-normal hover:text-[#0d6efd] ease-in-out duration-75  uppercase"
           >
             NFT Game! New Oppoturnity
           </Link>

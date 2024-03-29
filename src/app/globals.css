@@ -46,3 +46,7 @@
     display: none;
   }
 }
+
+body {
+  box-sizing: border-box !important;
+}

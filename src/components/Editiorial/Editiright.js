@@ -1,20 +1,23 @@
 import React from "react";
-import BlogImg from "../../../public/assets/6.png";
+import EditeRigt from "../../../public/assets/6.png";
+import EditeRigt1 from "../../../public/assets/edit1.png";
+import EditeRigt2 from "../../../public/assets/edit2.png";
 import Image from "next/image";
 import Flex from "../helpers/Flex/Flex";
+import Link from "next/link";
 import { MdOutlineWatchLater } from "react-icons/md";
 import { TbCircleLetterA } from "react-icons/tb";
-import Link from "next/link";
 import { FaRegEye } from "react-icons/fa6";
 import { RiMessage2Line } from "react-icons/ri";
 const Editiright = () => {
   return (
     <div>
-      <div className="max:w-[400px] lg:w-[515px]  pl-5 border-l border-solid border-white border-box">
-        <Flex className="border-b border-solid border-white pb-5">
-          <div className="w-[169px] h-[138px] rounded-md overflow-hidden mr-7">
+      <div className="w-full lg:w-[515px]   lg:block hidden  pl-5 lg:border-l lg:border-solid lg:border-white border-box">
+        <Flex className=" border-b border-solid  pb-5">
+          <div className=" lg:w-[169px] h-[138px] rounded-md overflow-hidden mr-7">
             <Image
-              src={BlogImg}
+              width={300}
+              src={EditeRigt1}
               alt="BlogImg"
               className="w-full h-full object-cover bg-cover"
             />
@@ -80,10 +83,11 @@ const Editiright = () => {
             </div>
           </div>
         </Flex>
-        <Flex className="border-b border-solid border-white p-5">
+        <Flex className="border-b border-solid border-white py-5">
           <div className="w-[169px] h-[138px] rounded-md overflow-hidden mr-7">
             <Image
-              src={BlogImg}
+              width={300}
+              src={EditeRigt2}
               alt="BlogImg"
               className="w-full h-full object-cover bg-cover"
             />
@@ -152,7 +156,8 @@ const Editiright = () => {
         <Flex className=" pt-5">
           <div className="w-[169px] h-[138px] rounded-md overflow-hidden mr-7">
             <Image
-              src={BlogImg}
+              width={300}
+              src={EditeRigt1}
               alt="BlogImg"
               className="w-full h-full object-cover bg-cover"
             />

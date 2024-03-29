@@ -11,6 +11,7 @@ import Slider from "react-slick";
 const Works = () => {
   var settings = {
     dots: true,
+
     infinite: true,
     speed: 500,
     slidesToShow: 2,
@@ -18,21 +19,21 @@ const Works = () => {
     arrows: true,
     responsive: [
       {
-        breakpoint: 1536,
+        breakpoint: 1400,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 1280,
+        breakpoint: 1200,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 1024,
+        breakpoint: 992,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -43,13 +44,23 @@ const Works = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: true,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 576,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 375,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
         },
       },
     ],
@@ -64,8 +75,8 @@ const Works = () => {
             <div className="max-w-[1000px] mx-auto ">
               <Slider {...settings}>
                 {WorksData.map((item, i) => (
-                  <div key={i} className=" ml-[20px]">
-                    <div className="max-w-[600px] max-h-[416px] lg:w-[457px] lg:h-[316px] overflow-hidden rounded-md">
+                  <div key={i} className=" sm:mx-0 lg:ml-[20px] px-4 lg:px-0 ">
+                    <div className=" max-h-[416px] sm:w-full  lg:w-[457px] lg:h-[316px] overflow-hidden rounded-md">
                       <Image
                         src={item.workimg}
                         width={457}

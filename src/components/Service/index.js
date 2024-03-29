@@ -109,6 +109,13 @@ const Service = ({ children }) => {
           slidesToScroll: 1,
         },
       },
+      {
+        breakpoint: 414,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
     ],
   };
   return (
@@ -122,18 +129,21 @@ const Service = ({ children }) => {
             />
 
             <div className="slider-container ">
-              <Slider {...settings} className="border-r border-[#020047]">
+              <Slider
+                {...settings}
+                className=" lg:border-r lg:border-[#020047]"
+              >
                 {ServiceData.map((item, i) => (
                   <div
                     key={i}
-                    className=" px-6 py-2 text-center border-r border-solid border-[#dee2e6] mb-[110px]"
+                    className=" px-6 py-2 text-center lg:border-r lg:border-solid  lg:border-[#dee2e6] mb-[110px]"
                   >
                     <div className="flex justify-center mb-8">
                       <Image src={item.images} alt="ServiceImg" />
                     </div>
                     <Headings title={item.title} />
                     <Peragraph peratitle={item.peragraph} />
-                    <Flex className="max-w-[312px] justify-center flex-wrap mx-auto">
+                    <Flex className="max-w-[312px] xs:w-full justify-center flex-wrap mx-auto">
                       {ServiceLink.map((data, i) => (
                         <Link
                           key={i}

@@ -9,9 +9,10 @@ import EditoriImg from "../../../public/assets/editiorial.png";
 import Editileft from "./Editileft";
 import Editiright from "./Editiright";
 import EditImage from "../../../public/assets/editiorial.png";
+import Bottom from "./Bottom";
 const Editiorial = () => {
   return (
-    <div className="relative   bg-gradient-to-b from-[#157aa6]  to-[#010049] py-[100px] ">
+    <div className=" relative  bg-gradient-to-b from-[#157aa6]  to-[#010049] py-[100px] ">
       {/* <div className="w-full absolute bottom-0 left-0 bg-center bg-cover bg-no-repeat">
         <Image
           width={987}
@@ -22,14 +23,15 @@ const Editiorial = () => {
         />
       </div> */}
       <Container>
-        <div className="relative z-50">
+        <div className="relative z-50 lg:px-0 px-4">
           <div className="text-center z-50  mb-[70px]">
             <Heading className="text-canter z-50" title="Editiorial" />
           </div>
-          <div className="max-w-[1065px] z-50 mx-auto px-10">
+          <div className="max-w-[1065px] z-50 mx-auto px-0 lg:px-10">
             <Flex className="flex-wrap lg:flex-nowrap lg:justify-between  z-50">
               <div>
                 <Editileft />
+                <Bottom />
               </div>
               <div>
                 <Editiright />
@@ -45,17 +47,17 @@ const Editiorial = () => {
             </div>
           </div>
         </div>
+        <div className="w-full   absolute top-0 left-0  ">
+          <Image
+            src={EditImage}
+            alt="hero-img"
+            loading="lazy"
+            width="0"
+            height="0"
+            className="w-[110%]  "
+          />
+        </div>
       </Container>
-      <div className="w-full hidden xl:block absolute top-0 left-0  ">
-        <Image
-          src={EditImage}
-          alt="hero-img"
-          loading="lazy"
-          width="0"
-          height="0"
-          className="w-[110%]  "
-        />
-      </div>
     </div>
   );
 };

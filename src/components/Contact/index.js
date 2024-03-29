@@ -8,7 +8,7 @@ import ContimgAni from "../../../public/assets/global2.png";
 
 const Contact = () => {
   return (
-    <div className="bg-secondary pt-1 pb-[250px] relative overflow-hidden">
+    <div className="bg-secondary pt-1 pb-[150px] lg:pb-[250px] relative overflow-hidden">
       <Container>
         <div>
           <div className="text-center mt-[70px] uppercase">
@@ -42,11 +42,11 @@ const Contact = () => {
           </div>
         </div>
       </Container>
-      <div className="absolute bottom-[-600px] left-[50%] translate-x-[-50%] ">
+      <div className="absolute bottom-[-45%] scale-50 lg:scale-100 left-[6%] lg:bottom-[-33%] lg:left-[50%] xl:bottom-[-450px]  xl:left-[60%] lg:translate-x-[-50%] ">
         <Image
           src={ContimgAni}
           alt="contact-img-animation"
-          className=" animate-spin animate-duration-[100000ms] animate-ease-linear  opacity-[.7]"
+          className=" animate-spin animate-duration-[100000ms] animate-ease-linear   "
         />
       </div>
     </div>

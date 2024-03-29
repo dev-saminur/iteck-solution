@@ -27,8 +27,8 @@ const PricingTable = () => {
           <p className="text-sm text-white">Billed annually</p>
         </div>
         {show ? (
-          <Flex className="flex-wrap gap-y-8 lg-gap-y-0 justify-center lg:justify-between">
-            <div className="max-w-[315px] lg:w-[315px] border border-solid border-[#3D9DD1]  py-[85px] px-[50px] text-center">
+          <Flex className="flex-wrap gap-y-8 lg-gap-y-0 justify-center lg:justify-between sm:px-4 lg:px-0">
+            <div className="sm:w-full lg:w-[315px] border border-solid border-[#3D9DD1]  py-[85px] px-[50px] text-center">
               <div className="flex justify-center">
                 <Image src={priceOne} alt="pricing" />
               </div>
@@ -55,7 +55,7 @@ const PricingTable = () => {
                 Ger Started Now
               </Link>
             </div>
-            <div className="max-w-[315px] lg:w-[315px]    lg:border-x-0  border-t-[12px] border-t-[#15F1FF] border border-solid border-[#3D9DD1]  pt-[15px] pb-[85px] px-[50px] text-center">
+            <div className="sm:w-full lg:w-[315px]    lg:border-x-0  border-t-[12px] border-t-[#15F1FF] border border-solid border-[#3D9DD1]  pt-[15px] pb-[85px] px-[50px] text-center">
               <button className="bg-[#1f3f85] py-[5px] px-2 text-white mb-9 text-xs">
                 Recommended
               </button>
@@ -85,7 +85,7 @@ const PricingTable = () => {
                 Ger Started Now
               </Link>
             </div>
-            <div className="max-w-[315px] lg:w-[315px] border border-solid border-[#3D9DD1]  py-[85px] px-[50px] text-center">
+            <div className="sm:w-full lg:w-[315px] border border-solid border-[#3D9DD1]  py-[85px] px-[50px] text-center">
               <div className="flex justify-center">
                 <Image src={priceOne} alt="pricing" />
               </div>
@@ -114,8 +114,8 @@ const PricingTable = () => {
             </div>
           </Flex>
         ) : (
-          <Flex className="flex-wrap gap-y-8 lg-gap-y-0 justify-center lg:justify-between ">
-            <div className="max-w-[315px] lg:w-[315px] border border-solid border-[#3D9DD1]  py-[85px] px-[50px] text-center">
+          <Flex className="flex-wrap gap-y-8 lg-gap-y-0 justify-center lg:justify-between sm:px-4 lg:px-0">
+            <div className="sm:w-full lg:w-[315px] border border-solid border-[#3D9DD1]  py-[85px] px-[50px] text-center">
               <div className="flex justify-center">
                 <Image src={priceOne} alt="pricing" />
               </div>
@@ -142,7 +142,7 @@ const PricingTable = () => {
                 Ger Started Now
               </Link>
             </div>
-            <div className="max-w-[315px] lg:w-[315px]    lg:border-x-0  border-t-[12px] border-t-[#15F1FF] border border-solid border-[#3D9DD1]  pt-[15px] pb-[85px] px-[50px] text-center">
+            <div className="sm:w-full lg:w-[315px]    lg:border-x-0  border-t-[12px] border-t-[#15F1FF] border border-solid border-[#3D9DD1]  pt-[15px] pb-[85px] px-[50px] text-center">
               <button className="bg-[#1f3f85] py-[5px] px-2 text-white mb-9 text-xs">
                 Recommended
               </button>
@@ -172,7 +172,7 @@ const PricingTable = () => {
                 Ger Started Now
               </Link>
             </div>
-            <div className="max-w-[315px] lg:w-[315px] border border-solid border-[#3D9DD1]  py-[85px] px-[50px] text-center">
+            <div className="sm:w-full lg:w-[315px] border border-solid border-[#3D9DD1]  py-[85px] px-[50px] text-center">
               <div className="flex justify-center">
                 <Image src={priceOne} alt="pricing" />
               </div>
