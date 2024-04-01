@@ -5,9 +5,7 @@ import React from "react";
 const Abouts = () => {
   return (
     <div>
-      <Layout>
-        <Contact />
-      </Layout>
+      <Layout></Layout>
     </div>
   );
 };

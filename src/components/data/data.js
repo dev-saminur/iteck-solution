@@ -109,3 +109,28 @@ export const ReviewData = [
     position: " / Senior Marketing Amazon",
   },
 ];
+export const ResourceData = [
+  {
+    title: "Online Documentation",
+    link: "/",
+  },
+  {
+    title: "Roadmap",
+    link: "/",
+  },
+  {
+    title: "Intergrations",
+    link: "/",
+  },
+  {
+    title: "FAQs",
+    link: "/",
+  },
+  {
+    title: "Help Center",
+    link: "/",
+  },
+]
+
+
+

@@ -1,7 +1,8 @@
 import React from "react";
-import List from "../helpers/List/List";
-import Listitem from "../helpers/Listitem/Listitem";
+
 import Link from "next/link";
+import List from "@/components/helpers/List/List";
+import Listitem from "@/components/helpers/Listitem/Listitem";
 const Pages = () => {
   return (
     <div>

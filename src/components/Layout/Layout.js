@@ -1,12 +1,15 @@
 import React from "react";
-import Navbar from "../Navbar";
-import Footer from "../Footer";
+import Headertop from "../Common/Navbar/Headertop";
+import CommonNavbar from "../Common/Navbar";
+import Footer from "../Common/Footer";
 
 const Layout = ({ children }) => {
   return (
     <>
-      <Navbar />
+      <Headertop />
+      <CommonNavbar />
       {children}
+
       <Footer />
     </>
   );
