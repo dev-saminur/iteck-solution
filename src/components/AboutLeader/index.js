@@ -11,6 +11,17 @@ const AboutLeader = () => {
   return (
     <div className="bg-[#DAEBEE] py-[100px] rounded-[20px]">
       <Container>
+        <div className="mb-[70px] text-center">
+          <h2 className="text-[45px] font-bold text-[#212529] leading-[1.4] mb-5 z-50">
+            Our
+            <span className="text-[#157EFB] ml-2  relative after:absolute after:content-[''] after:bottom-0 after:left-0 after:w-[100%] after:h-[40%] after:bg-[#157EFB] after:opacity-[.1]">
+              Leaders
+            </span>
+          </h2>
+          <p className="text-[15px] text-[#666666] leading-[1.7]  text-center">
+            Profressional & Friendly is our slogan. Meet our leaders
+          </p>
+        </div>
         <div className="grid grid-cols-4 gap-x-10 justify-between">
           {LeaderData.map((item, i) => (
             <div
