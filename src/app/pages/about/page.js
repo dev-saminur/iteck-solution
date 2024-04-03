@@ -1,5 +1,7 @@
 import AboutBusiness from "@/components/AboutBusiness";
+import AboutCulture from "@/components/AboutCulture";
 import AboutHero from "@/components/AboutHero";
+import AboutLeader from "@/components/AboutLeader";
 import AboutService from "@/components/AboutService";
 import Layout from "@/components/Layout/Layout";
 import Philosophy from "@/components/Philosophy";
@@ -15,6 +17,8 @@ const Abouts = () => {
         <Philosophy />
         <AboutService />
         <AboutBusiness />
+        <AboutCulture />
+        <AboutLeader />
       </Layout>
     </>
   );
