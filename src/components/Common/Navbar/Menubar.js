@@ -11,7 +11,6 @@ const Menubar = () => {
   return (
     <>
       <div className="hidden relative lg:block w-3/5 z-50 ">
-       
         <List className="relative z-50">
           <Flex className="items-center justify-center">
             <Listitem className=" group flex   relative text-white   text-xs">
@@ -75,9 +74,9 @@ const Menubar = () => {
             <Listitem className=" relative text-white    text-xs">
               <Link
                 className="relative hover:bg-[#348CB2] uppercase font-medium p-8 hover:border-b hover:border-[#14E9F7] transition-all ease-in after:duration-300"
-                href="#"
+                href="/pages/contactus"
               >
-                Contact
+                Contact Us
               </Link>
             </Listitem>
           </Flex>

@@ -18,26 +18,26 @@ const ContactForm = () => {
                 <input
                   type="text"
                   placeholder="Name"
-                  className="w-[48%] text-[#999] text-xs  outline-none py-2.5 px-[25px] rounded-[30px] border border-solid border-[#999] focus:ring-1 focus:ring-inset focus:ring-[#157EFB]"
+                  className="w-[49%] text-[#999] text-xs  outline-none py-2.5 px-[25px] rounded-[30px] border border-solid border-[#999] focus:ring-1 focus:ring-inset focus:ring-[#157EFB]"
                 />
 
                 <input
                   type="email"
                   placeholder="Enter Your Email Address *"
-                  className="w-[48%] text-[#999] text-xs  outline-none py-2.5 px-[25px] rounded-[30px] border border-solid border-[#999] focus:ring-1 focus:ring-inset focus:ring-[#157EFB]"
+                  className="w-[49%] text-[#999] text-xs  outline-none py-2.5 px-[25px] rounded-[30px] border border-solid border-[#999] focus:ring-1 focus:ring-inset focus:ring-[#157EFB]"
                 />
               </Flex>
               <Flex className="justify-between mb-5">
                 <input
                   type="text"
                   placeholder="Phone Number (Option)"
-                  className="w-[48%] text-[#999] text-xs  outline-none py-2.5 px-[25px] rounded-[30px] border border-solid border-[#999] focus:ring-1 focus:ring-inset focus:ring-[#157EFB]"
+                  className="w-[49%] text-[#999] text-xs  outline-none py-2.5 px-[25px] rounded-[30px] border border-solid border-[#999] focus:ring-1 focus:ring-inset focus:ring-[#157EFB]"
                 />
 
                 <input
                   type="text"
                   placeholder="Your Website (option) "
-                  className="w-[48%] text-[#999] text-xs  outline-none py-2.5 px-[25px] rounded-[30px] border border-solid border-[#999] focus:ring-1 focus:ring-inset focus:ring-[#157EFB]"
+                  className="w-[49%] text-[#999] text-xs  outline-none py-2.5 px-[25px] rounded-[30px] border border-solid border-[#999] focus:ring-1 focus:ring-inset focus:ring-[#157EFB]"
                 />
               </Flex>
               <div className=" w-full bg-white rounded-[30px] mb-5">

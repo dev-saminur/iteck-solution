@@ -17,7 +17,7 @@ const Pages = () => {
           </Link>
         </Listitem>
         <Listitem className="hover:bg-[#010049] p-2 text-white text-xs transition-all ease-in after:duration-300">
-          <Link href="#" className="  uppercase font-medium">
+          <Link href="" className="  uppercase font-medium">
             Service
           </Link>
         </Listitem>
