@@ -1,4 +1,5 @@
 import AboutBusiness from "@/components/AboutBusiness";
+import AboutContact from "@/components/AboutContact";
 import AboutCulture from "@/components/AboutCulture";
 import AboutHero from "@/components/AboutHero";
 import AboutLeader from "@/components/AboutLeader";
@@ -19,6 +20,7 @@ const Abouts = () => {
         <AboutBusiness />
         <AboutCulture />
         <AboutLeader />
+        <AboutContact />
       </Layout>
     </>
   );
