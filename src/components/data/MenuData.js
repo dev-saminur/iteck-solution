@@ -9,7 +9,7 @@ export const FooterMenuData = [
   },
   {
     title: "Service",
-    link: "/",
+    link: "/pages/services",
   },
   {
     title: "Portfolio",
