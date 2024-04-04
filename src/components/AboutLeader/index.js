@@ -33,7 +33,7 @@ const AboutLeader = () => {
                   height={350}
                   src={item.images}
                   alt="Leader-img"
-                  className="h-full bg-cover rounded-[15px] group bg-center"
+                  className="h-full w-full rounded-[15px] group bg-center bg-cover object-cover  "
                 />
                 <Flex className="items-center justify-center gap-x-6 absolute bottom-[-12%] group-hover:bottom-5 right-0 w-0 group-hover:w-full left-0 z-50 duration-500">
                   <div className="bg-white  hover:bg-[#4a00e1] w-[30px] h-[30px] rounded-full flex justify-center items-center  ease-in transition-all duration-300">
