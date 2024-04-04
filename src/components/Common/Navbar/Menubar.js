@@ -16,7 +16,7 @@ const Menubar = () => {
             <Listitem className=" group flex   relative text-white   text-xs">
               <Link
                 href="#"
-                className="relative bg-[#348CB2] uppercase font-medium  p-8 border-b border-[#14E9F7] transition-all ease-in after:duration-300"
+                className="relative bg-[#348CB2] uppercase font-medium  p-8 border-b border-[#14E9F7] transition-all ease-in after:duration-300 z-50"
               >
                 Homes
               </Link>
