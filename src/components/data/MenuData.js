@@ -4,19 +4,23 @@ export const FooterMenuData = [
     link: "/",
   },
   {
-    title: "About",
+    title: " About Iteck ",
     link: "/pages/about",
   },
   {
-    title: "Service",
+    title: " Projects ",
     link: "/pages/services",
   },
   {
-    title: "Portfolio",
+    title: " product ",
     link: "/",
   },
   {
-    title: "News",
-    link: "/",
+    title: " Blog ",
+    link: "/pages/blogs",
+  },
+  {
+    title: "  Contact  ",
+    link: "/pages/contactus",
   },
 ];
