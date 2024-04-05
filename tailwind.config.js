@@ -31,8 +31,12 @@ module.exports = {
           "50%": { transform: "translateX(0)" },
         },
         topbottom: {
-          "0%, 100%": { transform: "translateY(-4%)" },
+          "0%, 100%": { transform: "translateY(-4%) " },
           "50%": { transform: "translateY(0)" },
+        },
+        topbottomscaledown: {
+          "0%": { transform: "translateY(0%) scale(.9)  " },
+          "100%": { transform: "translateY(3) scale(1) " },
         },
         smalltobig: {
           "0%": { transform: "scale(1) " },

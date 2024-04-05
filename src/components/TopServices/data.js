@@ -49,4 +49,46 @@ export const TopCardData = [
     peratitle:
       "Get more website traffic, more customers & more online visibility with powerful SEO services.",
   },
+  {
+    icon: TopCardImg,
+    title: "Store Hours and Vacation",
+    peratitle:
+      "You can provide the answers that your potential customers are trying to find, so you can become the industry.",
+  },
+  {
+    icon: TopCardImg1,
+    title: "Google/FB Ads",
+    peratitle:
+      "Get more website traffic, more customers & more online visibility with powerful SEO services.",
+  },
+  {
+    icon: TopCardImg2,
+    title: "Email Marketing",
+    peratitle:
+      "Your website has to impress your visitors within just a few seconds",
+  },
+  {
+    icon: TopCardImg3,
+    title: "Store Hours and Vacation",
+    peratitle:
+      "You can provide the answers that your potential customers are trying to find, so you can become the industry.",
+  },
+  {
+    icon: TopCardImg4,
+    title: "Google/FB Ads",
+    peratitle:
+      "Get more website traffic, more customers & more online visibility with powerful SEO services.",
+  },
+  {
+    icon: TopCardImg5,
+    title: "Email Marketing",
+    peratitle:
+      "Your website has to impress your visitors within just a few seconds",
+  },
+  {
+    icon: TopCardImg6,
+    title: "Google/FB Ads",
+    peratitle:
+      "Get more website traffic, more customers & more online visibility with powerful SEO services.",
+  },
 ];
