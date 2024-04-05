@@ -18,7 +18,7 @@ const AboutHero = () => {
           <div>
             <div className="grid grid-cols-12">
               <div className="col-start-1 col-end-13 lg:col-start-3 lg:col-end-11 ">
-                <div className="relative  text-center z-50">
+                <div className="relative  text-center z-40">
                   <h2 className="text-[29px] sm:text-[30px] lg:text-[55px] text-black font-bold leading-[1.2] tracking-[-2px] capitalize px-0 lg:px-[80px]">
                     We provide perfect <br /> IT Solutions & Technology for any
                     Startups
