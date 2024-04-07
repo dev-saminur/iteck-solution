@@ -1,12 +1,6 @@
 import React from "react";
 import Flex from "../helpers/Flex/Flex";
-import NewsBlog from "../../../public/assets/blogs/news.png";
-import NewsBlog1 from "../../../public/assets/blogs/news1.png";
-import NewsBlog2 from "../../../public/assets/blogs/news2.png";
-import NewsBlog3 from "../../../public/assets/blogs/news3.png";
-import NewsBlog4 from "../../../public/assets/blogs/news4.png";
-import NewsBlog5 from "../../../public/assets/blogs/news5.png";
-import NewsBlog6 from "../../../public/assets/blogs/news6.png";
+import Link from "next/link";
 import Image from "next/image";
 import { IoLogoInstagram } from "react-icons/io";
 import { InstaData } from "./data";
@@ -43,6 +37,92 @@ const InstaTag = () => {
           <h3 className="text-base text-[#212529] mb-2 leading-[2] font-semibold uppercase ">
             POPULAR TAGS
           </h3>
+          <div className="flex flex-wrap gap-x-4 gap-y-1">
+            <Link
+              href="#"
+              className="text-[11px] bg-[#eef4f8] text-[#212529] px-2 py-1 rounded-[4px] mb-1 hover:text-[#0d6efd] duration-150"
+            >
+              WordPress
+            </Link>
+            <Link
+              href="#"
+              className="text-[11px] bg-[#eef4f8] text-[#212529] px-2 py-1 rounded-[4px] mb-1 hover:text-[#0d6efd] duration-150"
+            >
+              PHP
+            </Link>
+            <Link
+              href="#"
+              className="text-[11px] bg-[#eef4f8] text-[#212529] px-2 py-1 rounded-[4px] mb-1 hover:text-[#0d6efd] duration-150"
+            >
+              HTML/CSS
+            </Link>
+            <Link
+              href="#"
+              className="text-[11px] bg-[#eef4f8] text-[#212529] px-2 py-1 rounded-[4px] mb-1 hover:text-[#0d6efd] duration-150"
+            >
+              Figma
+            </Link>
+            <Link
+              href="#"
+              className="text-[11px] bg-[#eef4f8] text-[#212529] px-2 py-1 rounded-[4px] mb-1 hover:text-[#0d6efd] duration-150"
+            >
+              Techonology
+            </Link>
+            <Link
+              href="#"
+              className="text-[11px] bg-[#eef4f8] text-[#212529] px-2 py-1 rounded-[4px] mb-1 hover:text-[#0d6efd] duration-150"
+            >
+              Marketing
+            </Link>
+            <Link
+              href="#"
+              className="text-[11px] bg-[#eef4f8] text-[#212529] px-2 py-1 rounded-[4px] mb-1 hover:text-[#0d6efd] duration-150"
+            >
+              Consultation
+            </Link>
+            <Link
+              href="#"
+              className="text-[11px] bg-[#eef4f8] text-[#212529] px-2 py-1 rounded-[4px] mb-1 hover:text-[#0d6efd] duration-150"
+            >
+              SEO
+            </Link>
+            <Link
+              href="#"
+              className="text-[11px] bg-[#eef4f8] text-[#212529] px-2 py-1 rounded-[4px] mb-1 hover:text-[#0d6efd] duration-150"
+            >
+              Enveto
+            </Link>
+            <Link
+              href="#"
+              className="text-[11px] bg-[#eef4f8] text-[#212529] px-2 py-1 rounded-[4px] mb-1 hover:text-[#0d6efd] duration-150"
+            >
+              Psd
+            </Link>
+            <Link
+              href="#"
+              className="text-[11px] bg-[#eef4f8] text-[#212529] px-2 py-1 rounded-[4px] mb-1 hover:text-[#0d6efd] duration-150"
+            >
+              Node Js
+            </Link>
+            <Link
+              href="#"
+              className="text-[11px] bg-[#eef4f8] text-[#212529] px-2 py-1 rounded-[4px] mb-1 hover:text-[#0d6efd] duration-150"
+            >
+              Mongodb
+            </Link>
+            <Link
+              href="#"
+              className="text-[11px] bg-[#eef4f8] text-[#212529] px-2 py-1 rounded-[4px] mb-1 hover:text-[#0d6efd] duration-150"
+            >
+              React Js
+            </Link>
+            <Link
+              href="#"
+              className="text-[11px] bg-[#eef4f8] text-[#212529] px-2 py-1 rounded-[4px] mb-1 hover:text-[#0d6efd] duration-150"
+            >
+              Next.Js
+            </Link>
+          </div>
         </div>
       </div>
     </>
