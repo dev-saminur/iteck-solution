@@ -174,3 +174,11 @@ export const PostCatagoryData = [
     numberpost: "200",
   },
 ];
+export const InstaData = [
+  { imgages: NewsBlog },
+  { imgages: NewsBlog1 },
+  { imgages: NewsBlog2 },
+  { imgages: NewsBlog3 },
+  { imgages: NewsBlog4 },
+  { imgages: NewsBlog5 },
+];
