@@ -5,6 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { AllNewsData } from "./data";
+import RecentPost from "./RecentPost";
+import Catagories from "./Catagories";
+import NewsLetter from "./NewsLetter";
+import InstaTag from "./InstaTag";
 const AllNews = () => {
   return (
     <>
@@ -44,7 +48,7 @@ const AllNews = () => {
                       <div className="mt-3 ">
                         <Link
                           href="#"
-                          className="text-[#212529] text-lg hover:text-[#0d6efd]  font-normal ease-in-out duration-75  "
+                          className="text-[#212529] text-lg hover:text-[#0d6efd]  font-bold ease-in-out duration-75  "
                         >
                           {item.headlinks}
                         </Link>
@@ -91,7 +95,12 @@ const AllNews = () => {
               ))}
             </div>
             <div className="col-start-8 col-end-12">
-              <div className="bg-gray-700">two</div>
+              <div className=" pl-[50px]">
+                <RecentPost />
+                <Catagories />
+                <NewsLetter />
+                <InstaTag/>
+              </div>
             </div>
           </div>
         </Container>
