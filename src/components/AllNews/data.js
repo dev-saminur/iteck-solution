@@ -116,3 +116,61 @@ export const AllNewsData = [
     view: "704k",
   },
 ];
+
+export const RecentPostData = [
+  {
+    images: NewsBlog1,
+    title: " Crypto Trend 2023 ",
+    peratitle: " If there's one way that wireless technology has [...] ",
+  },
+  {
+    images: NewsBlog2,
+    title: "  How To Become Web Developer  ",
+    peratitle: " If there's one way that wireless technology has [...] ",
+  },
+  {
+    images: NewsBlog3,
+    title: "   Wireframe for UI/UX ",
+    peratitle: " If there's one way that wireless technology has [...] ",
+  },
+  {
+    images: NewsBlog4,
+    title: "   AI With Fingerprint ",
+    peratitle: " If there's one way that wireless technology has [...] ",
+  },
+];
+
+export const PostCatagoryData = [
+  {
+    heading: "All",
+    numberpost: "265",
+  },
+  {
+    heading: "News",
+    numberpost: "18",
+  },
+  {
+    heading: "Technology",
+    numberpost: "108",
+  },
+  {
+    heading: "Tips and Tricks",
+    numberpost: "18",
+  },
+  {
+    heading: "Career",
+    numberpost: "30",
+  },
+  {
+    heading: "Community",
+    numberpost: "830",
+  },
+  {
+    heading: "Videos",
+    numberpost: "310",
+  },
+  {
+    heading: "Others",
+    numberpost: "200",
+  },
+];
