@@ -2,14 +2,21 @@
 import React, { useRef } from "react";
 import Image from "next/image";
 import Container from "../helpers/Container/Container";
-import { Navigation, Pagination, Autoplay, prevEl } from "swiper/modules";
+import {
+  Navigation,
+  Pagination,
+  Autoplay,
+  Scrollbar,
+  A11y,
+  EffectFade,
+} from "swiper/modules";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { MdOutlineWatchLater } from "react-icons/md";
-
 import BlogBannerImg from "../../../public/assets/blogs/blogbanner.png";
 import BlogBannerImg1 from "../../../public/assets/blogs/blogbanner1.png";
 import BlogBannerImg2 from "../../../public/assets/blogs/blogbanner2.png";
+import { LiaAngleLeftSolid, LiaAngleRightSolid } from "react-icons/lia";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -34,10 +41,15 @@ const BlogBanner = () => {
           </div>
           <div>
             <Swiper
-              modules={[Navigation, Autoplay, Pagination]}
-              navigation={{
-                prevEl: "next",
-              }}
+              modules={[
+                Navigation,
+                Autoplay,
+                Pagination,
+                Scrollbar,
+                A11y,
+                EffectFade,
+              ]}
+              navigation={{ nextEl: ".arrow-left", prevEl: ".arrow-right" }}
               slidesPerView={1}
               pagination={{ clickable: false }}
               onSwiper={(swiper) => console.log(swiper)}
@@ -46,7 +58,7 @@ const BlogBanner = () => {
                 delay: 3500,
                 disableOnInteraction: false,
               }}
-              className="mySwiper"
+              className="mySwiper "
             >
               <SwiperSlide>
                 <div className="max-w-[1140px] max-h-[500px] mx-auto rounded-[20px] relative overflow-hidden">
@@ -183,6 +195,12 @@ const BlogBanner = () => {
                   </div>
                 </div>
               </SwiperSlide>
+              <button className="arrow-left arrow z-50 absolute top-[50%] translate-y-[-50%] left-[100px] bg-[#FFFFFF] rotate-45 rounded-[10px] w-[50px] h-[50px] ">
+                <LiaAngleLeftSolid className="text-xl text-[#0066FF] ml-[25px] mb-[19px] rotate-[-45deg]" />
+              </button>
+              <button className="arrow-right arrow absolute top-[50%] z-50 translate-y-[-50%] right-[100px] bg-[#FFFFFF] rotate-45 rounded-[10px] w-[50px] h-[50px] ">
+                <LiaAngleRightSolid className="text-xl text-[#0066FF] rotate-[-45deg] ml-[5px] mb-[-20px]" />
+              </button>
             </Swiper>
           </div>
         </Container>
