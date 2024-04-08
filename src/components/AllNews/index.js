@@ -9,6 +9,7 @@ import RecentPost from "./RecentPost";
 import Catagories from "./Catagories";
 import NewsLetter from "./NewsLetter";
 import InstaTag from "./InstaTag";
+import Pagination from "../Pagination/Pagination";
 const AllNews = () => {
   return (
     <>
@@ -16,7 +17,7 @@ const AllNews = () => {
         <Container>
           <div className="grid grid-cols-12">
             <div className="col-start-2 col-end-8">
-              {AllNewsData.map((item, i) => (
+              {/* {AllNewsData.map((item, i) => (
                 <div key={i} className="my-5">
                   <Flex className=" border-b border-solid  items-center pb-5">
                     <Image
@@ -92,14 +93,15 @@ const AllNews = () => {
                     </div>
                   </Flex>
                 </div>
-              ))}
+              ))} */}
+              <Pagination itemsPerPage={1} />
             </div>
             <div className="col-start-8 col-end-12">
               <div className=" pl-[50px]">
                 <RecentPost />
                 <Catagories />
                 <NewsLetter />
-                <InstaTag/>
+                <InstaTag />
               </div>
             </div>
           </div>
