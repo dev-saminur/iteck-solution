@@ -5,7 +5,7 @@ import TopCard from "./TopCard";
 const TopServices = () => {
   return (
     <>
-      <div className="py-[100px]">
+      <div className="py-[100px] px-4 lg:px-2 xl:px-0">
         <Container>
           <div className="mb-[70px] text-center">
             <h2 className="text-[30px] lg:text-[45px] font-bold text-[#212529] leading-[1.4] mb-5 z-50">
@@ -14,7 +14,7 @@ const TopServices = () => {
                 Services
               </span>
             </h2>
-            <p className="text-[15px] text-[#666666] leading-[1.7]  text-center lg:px-[350px]">
+            <p className="text-[15px] text-[#666666] leading-[1.7]  text-center lg:px-[174px] xl:px-[218px] xxl:px-[350px]">
               Iteck Dashboard is a powerhouse when it comes to the feature list.
               This ensures you have every functionality you need to build, run,
               and expand your marketplace
