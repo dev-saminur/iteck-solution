@@ -7,11 +7,11 @@ import { CardData } from "./data";
 const ServiceCard = () => {
   return (
     <>
-      <div className="grid grid-cols-4 gap-x-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-10">
         {CardData.map((item, i) => (
           <div
             key={i}
-            className="py-12 px-14 bg-white rounded-[15px] text-center mb-8 hover:shadow-2xl group duration-200"
+            className="py-12 px-4 sm:px-[30px] xl:px-14 bg-white rounded-[15px] text-center mb-8 hover:shadow-2xl group duration-200"
           >
             <Link href="/" className="text-center">
               <Image
