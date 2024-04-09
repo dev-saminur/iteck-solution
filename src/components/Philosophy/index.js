@@ -7,13 +7,20 @@ import SuperMan from "../../../public/assets/about/superman_3d.png";
 const Philosophy = () => {
   return (
     <>
-      <div className="py-[100px] bg-[#ECF5FF] ">
+      <div className="py-[100px] bg-[#ECF5FF] px-4 xl:px-0">
         <Container>
-          <div className="grid grid-cols-2 mx-[100px] gap-x-[250px] items-center">
-            <div className="pr-[100px]">
-              <h2 className="text-[45px] font-bold text-[#212529] leading-[1.4] mb-5 z-50">
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:mx-[100px] xl:gap-x-[250px] items-center">
+            <Image
+              src={SuperMan}
+              alt="superman"
+              width={555}
+              height={400}
+              className="w-full h-full block lg:hidden mb-[100px]"
+            />
+            <div className="pr-0 lg:pr-[100px] mb-[70px] lg:mb-0 ">
+              <h2 className="text-[30px] lg:text-[45px] font-bold text-[#212529] leading-[1.4] mb-5 z-50">
                 Itec's{" "}
-                <span className="text-[#157EFB] block  relative after:absolute after:content-[''] after:bottom-0 after:left-0 after:w-[65%] after:h-[40%] after:bg-[#157EFB] after:opacity-[.1]">
+                <span className="text-[#157EFB] lg:block  relative after:absolute after:content-[''] after:bottom-0 after:left-0 after:w-[65%] after:h-[40%] after:bg-[#157EFB] after:opacity-[.1]">
                   {" "}
                   Philosophy
                 </span>
@@ -44,7 +51,13 @@ const Philosophy = () => {
                 </Link>
               </div>
             </div>
-            <Image src={SuperMan} alt="superman" width={555} height={400} />
+            <Image
+              src={SuperMan}
+              alt="superman"
+              width={555}
+              height={400}
+              className="w-full h-full hidden lg:block "
+            />
           </div>
         </Container>
       </div>
