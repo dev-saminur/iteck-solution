@@ -19,7 +19,7 @@ import Container from "../helpers/Container/Container";
 const SerClientReview = () => {
   return (
     <>
-      <div className="py-[100px] bg-[#F3F7FE]">
+      <div className="py-[100px] bg-[#F3F7FE] px-4 lg:px-2 xl:px-0">
         <Container>
           <div className="mb-[70px] text-center">
             <h2 className="text-[30px] lg:text-[45px] font-bold text-[#212529] leading-[1.4] mb-5 z-50">
@@ -28,7 +28,7 @@ const SerClientReview = () => {
                 Reviews
               </span>
             </h2>
-            <p className=" text-[15px] text-[#666666] leading-[1.7]  text-center px-0 sm:px-[150px] lg:px-[350px]">
+            <p className=" text-[15px] text-[#666666] leading-[1.7]  text-center px-0 sm:px-[150px] xl:px-[200px] xxl:px-[350px]">
               Iteck loved from thoudsands customer worldwide and get trusted
               from big companies.
             </p>
