@@ -18,8 +18,8 @@ const Abouts = () => {
         <Philosophy />
         <AboutService />
         <AboutBusiness />
-        {/*  <AboutCulture />
-        <AboutLeader />
+        <AboutCulture />
+        {/* <AboutLeader />
         <AboutContact /> */}
       </Layout>
     </>
