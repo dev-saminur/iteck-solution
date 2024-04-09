@@ -8,8 +8,9 @@ import Image from "next/image";
 const BusinessBottom = () => {
   var settings = {
     dots: false,
-    infinite: true,
+    arrows: false,
     rtl: true,
+    infinite: true,
     slidesToShow: 6,
     slidesToScroll: 1,
     initialSlide: 0,
@@ -19,25 +20,54 @@ const BusinessBottom = () => {
     cssEase: "linear",
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1920,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 6,
           slidesToScroll: 3,
           infinite: true,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 1200,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 4,
+          slidesToScroll: 3,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
           slidesToScroll: 2,
           initialSlide: 2,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 992,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 375,
+        settings: {
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
@@ -48,10 +78,10 @@ const BusinessBottom = () => {
       <div className="mt-4">
         <Slider {...settings}>
           {BusinessData.map((item, i) => (
-            <div key={i}>
+            <div key={i} className="mx-auto px-4">
               <Link
                 href="/"
-                className="h-[145px] w-[300px]   flex justify-center items-center  border border-solid border-[#788593] rounded-[20px] "
+                className="h-[145px] py-[30px]  px-[50px] flex justify-center items-center  border border-solid border-[#788593] rounded-[20px] "
               >
                 <Image src={item.images} alt="business" />
               </Link>
