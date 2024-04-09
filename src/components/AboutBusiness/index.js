@@ -11,6 +11,7 @@ import Experience from "./Experience";
 const AboutBusiness = () => {
   var settings = {
     dots: false,
+    arrows: false,
     infinite: true,
     slidesToShow: 6,
     slidesToScroll: 1,
@@ -21,7 +22,7 @@ const AboutBusiness = () => {
     cssEase: "linear",
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1920,
         settings: {
           slidesToShow: 6,
           slidesToScroll: 3,
@@ -29,17 +30,46 @@ const AboutBusiness = () => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 1200,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 4,
+          slidesToScroll: 3,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
           slidesToScroll: 2,
           initialSlide: 2,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 992,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 375,
+        settings: {
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
@@ -48,7 +78,7 @@ const AboutBusiness = () => {
 
   return (
     <>
-      <div className="bg-[#ECF5FF] py-[100px] px-7">
+      <div className="bg-[#ECF5FF] py-[100px] px-0 lg:px-7">
         <Container>
           <div className=" grid col-start-4 col-end-9">
             <div className="mb-[50px] text-center">
@@ -67,12 +97,16 @@ const AboutBusiness = () => {
 
         <Slider {...settings}>
           {BusinessData.map((item, i) => (
-            <div key={i} className="mx-auto">
+            <div key={i} className="mx-auto px-4">
               <Link
                 href="/"
-                className="h-[145px] w-[300px]   flex justify-center items-center  border border-solid border-[#788593] rounded-[20px] "
+                className="h-[145px] py-[30px]  px-[50px] flex justify-center items-center  border border-solid border-[#788593] rounded-[20px] "
               >
-                <Image src={item.images} alt="business" />
+                <Image
+                  src={item.images}
+                  alt="business"
+                  className=" h-full object-none"
+                />
               </Link>
             </div>
           ))}
