@@ -9,13 +9,13 @@ import ExperienceFive from "../../../public/assets/service/exper5.png";
 const SerExRight = () => {
   return (
     <>
-      <div className="relative ">
+      <div className="relative">
         <Image
           src={ExperienceOne}
           width={173}
           height={172}
           alt="ExperienceOne"
-          className="absolute  top-[20%] right-[5%] z-10 animate-spin animate-duration-[40000ms] animate-ease-linear animate-reverse"
+          className="absolute w-[35%] top-[20%] right-[5%] z-10 animate-spin animate-duration-[40000ms] animate-ease-linear animate-reverse"
         />
         <Image
           src={ExperienceTwo}
@@ -43,7 +43,7 @@ const SerExRight = () => {
           width={458}
           height={446}
           alt="ExperienceOne"
-          className="absolute top-[-46px] left-[0%] xl:top-[-20%] xl:left-[-170px] animate-spin animate-duration-[40000ms] animate-ease-linear  z-10 xl:scale-100 scale-75"
+          className="absolute w-[59%] top-[-46px] left-[0%] xl:top-[-20%] xl:left-[-170px] animate-spin animate-duration-[40000ms] animate-ease-linear  z-10 "
         />
       </div>
     </>
