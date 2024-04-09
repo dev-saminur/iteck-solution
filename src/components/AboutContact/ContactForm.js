@@ -8,36 +8,36 @@ const ContactForm = () => {
   return (
     <div className="relative bg-gradient-to-r from-[#79b1c2a1]  to-[#c9abee62] py-[100px] px-4 rounded-2xl border-t-[10px] border-b-[10px] border-solid border-[#157EFB]">
       <div className="grid grid-cols-12">
-        <div className="col-start-3 col-end-11">
+        <div className="col-start-1 col-end-[-1] lg:col-start-3 lg:col-end-11">
           <p className="text-red-500 text-xs leading-[1.7] text-center">
             The field is required mark as *
           </p>
-          <div className=" mt-8">
+          <div className=" mt-8 ">
             <form>
-              <Flex className="justify-between mb-5">
+              <Flex className="flex-wrap lg:flex-nowrap gap-y-5 lg:gap-y-0 lg:flex justify-between mb-5">
                 <input
                   type="text"
                   placeholder="Name"
-                  className="w-[49%] text-[#999] text-xs  outline-none py-2.5 px-[25px] rounded-[30px] border border-solid border-[#999] focus:ring-1 focus:ring-inset focus:ring-[#157EFB]"
+                  className="w-full lg:w-[49%] text-[#999] text-xs  outline-none py-2.5 px-[25px] rounded-[30px] border border-solid border-[#999] focus:ring-1 focus:ring-inset focus:ring-[#157EFB]"
                 />
 
                 <input
                   type="email"
                   placeholder="Enter Your Email Address *"
-                  className="w-[49%] text-[#999] text-xs  outline-none py-2.5 px-[25px] rounded-[30px] border border-solid border-[#999] focus:ring-1 focus:ring-inset focus:ring-[#157EFB]"
+                  className="w-full lg:w-[49%] text-[#999] text-xs  outline-none py-2.5 px-[25px] rounded-[30px] border border-solid border-[#999] focus:ring-1 focus:ring-inset focus:ring-[#157EFB]"
                 />
               </Flex>
-              <Flex className="justify-between mb-5">
+              <Flex className="flex-wrap lg:flex-nowrap gap-y-5 lg:gap-y-0 lg:flex justify-between mb-5">
                 <input
                   type="text"
                   placeholder="Phone Number (Option)"
-                  className="w-[49%] text-[#999] text-xs  outline-none py-2.5 px-[25px] rounded-[30px] border border-solid border-[#999] focus:ring-1 focus:ring-inset focus:ring-[#157EFB]"
+                  className="w-full lg:w-[49%] text-[#999] text-xs  outline-none py-2.5 px-[25px] rounded-[30px] border border-solid border-[#999] focus:ring-1 focus:ring-inset focus:ring-[#157EFB]"
                 />
 
                 <input
                   type="text"
                   placeholder="Your Website (option) "
-                  className="w-[49%] text-[#999] text-xs  outline-none py-2.5 px-[25px] rounded-[30px] border border-solid border-[#999] focus:ring-1 focus:ring-inset focus:ring-[#157EFB]"
+                  className="w-full lg:w-[49%] text-[#999] text-xs  outline-none py-2.5 px-[25px] rounded-[30px] border border-solid border-[#999] focus:ring-1 focus:ring-inset focus:ring-[#157EFB]"
                 />
               </Flex>
               <div className=" w-full bg-white rounded-[30px] mb-5">
@@ -87,14 +87,14 @@ const ContactForm = () => {
         width={204}
         height={270}
         alt="Contact_a"
-        className="absolute bottom-0 left-0"
+        className="absolute left-[-22%] sm:left-[-10%] md:left-[-7%] lg:left-[-3%]  sm:bottom-[-8%] bottom-[-13%] lg:bottom-0 xl:left-0 xl:scale-100 scale-[.3] sm:scale-[.5] lg:sm:scale-[.7]"
       />
       <Image
         src={ContactMessage}
         width={342}
         height={342}
         alt="Contact_message"
-        className="absolute top-[13%] right-[-11%]"
+        className="absolute top-[-12%] right-[-35%] sm:right-[-17%] md:right-[-12%] lg:right-[-5%] sm:top-[-9%] lg:top-[-4%]  xl:top-[4%] xxl:top-[13%] xl:right-[0%] xxl:right-[-11%] xl:scale-100 scale-[.3] sm:scale-[.5] lg:sm:scale-[.7]"
       />
     </div>
   );
