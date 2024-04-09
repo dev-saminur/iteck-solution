@@ -28,7 +28,7 @@ const SerClientReview = () => {
                 Reviews
               </span>
             </h2>
-            <p className=" text-[15px] text-[#666666] leading-[1.7]  text-center px-0 sm:px-[150px] xl:px-[200px] xxl:px-[350px]">
+            <p className=" text-[15px] text-[#666666] leading-[1.7]  text-center px-0 sm:px-[100px] md:px-[150px] xl:px-[200px] xxl:px-[350px]">
               Iteck loved from thoudsands customer worldwide and get trusted
               from big companies.
             </p>
