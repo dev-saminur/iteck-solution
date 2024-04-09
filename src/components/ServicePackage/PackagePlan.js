@@ -228,8 +228,8 @@ const PackagePlan = () => {
                 </div>
               </Flex>
             ) : (
-              <Flex>
-                <div className="w-[34%]">
+              <Flex className="flex-wrap lg:flex lg:flex-nowrap">
+                <div className="w-full sm:w-[65%] lg:w-[34%] ">
                   <div className=" border-b-2 border-solid border-[#21252953]">
                     <Image
                       src={PlanePacImg}
@@ -268,7 +268,7 @@ const PackagePlan = () => {
                     </p>
                   </div>
                 </div>
-                <div className="w-[22%]">
+                <div className="w-full sm:w-[35%] lg:w-[22%] lg:mb-0 mb-8">
                   <div className="py-[30px] text-center border-b-2 border-solid border-[#21252953]">
                     <p className="text-xs text-[#212529] font-bold uppercase m-2 leading-[1.5]">
                       Basic
@@ -321,7 +321,7 @@ const PackagePlan = () => {
                     </Link>
                   </div>
                 </div>
-                <div className="w-[22%] bg-[#F3F7FE] rounded-3xl pb-16">
+                <div className="w-full sm:w-[50%] lg:w-[22%] bg-[#F3F7FE] rounded-3xl pb-16">
                   <div className="py-[30px] text-center border-b-2 border-solid border-[#21252953]">
                     <p className="text-xs text-[#212529] font-bold uppercase m-2 leading-[1.5]">
                       PREMIUM
@@ -374,7 +374,7 @@ const PackagePlan = () => {
                     </Link>
                   </div>
                 </div>
-                <div className="w-[22%] ">
+                <div className="w-full sm:w-[50%] lg:w-[22%] ">
                   <div className="py-[30px] text-center border-b-2 border-solid border-[#21252953]">
                     <p className="text-xs text-[#212529] font-bold uppercase m-2 leading-[1.5]">
                       ULTIMATE
