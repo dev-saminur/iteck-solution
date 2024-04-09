@@ -2,9 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import CultureOne from "../../../public/assets/about/cl1.png";
-import CultureTwo from "../../../public/assets/about/cl2.png";
-import CultureThree from "../../../public/assets/about/cl3.png";
+
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -14,6 +12,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Container from "../helpers/Container/Container";
+import { AboutCultureData } from "./data";
 const AboutCulture = () => {
   return (
     <>
@@ -31,9 +30,8 @@ const AboutCulture = () => {
             </p>
           </div>
         </Container>
-        <div className=" py-[80px] overflow-hidden">
+        <div className=" py-[80px] overflow-hidden px-4 xl:px-0">
           <Swiper
-            // install Swiper modules
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={50}
             slidesPerView={3}
@@ -46,155 +44,46 @@ const AboutCulture = () => {
               disableOnInteraction: false,
             }}
             breakpoints={{
+              375: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
               640: {
                 slidesPerView: 2,
                 spaceBetween: 20,
               },
-              768: {
-                slidesPerView: 4,
-                spaceBetween: 40,
+
+              992: {
+                slidesPerView: 3,
+                spaceBetween: 50,
               },
-              1024: {
+
+              1200: {
                 slidesPerView: 5,
                 spaceBetween: 50,
               },
             }}
           >
-            <SwiperSlide>
-              <div className="max-w-[455px]  relative group overflow-hidden pr-[40px]">
-                <Link
-                  href="/"
-                  className="relative overflow-hidden	 rounded-[20px] max-h-[500px] after:absolute after:content-[' '] after:w-[50px] after:h-[3px] after:bg-white after:top-[51%] after:duration-500 after:left-[-12%] group-hover:after:left-[35%] after:translate-[-50%] before:absolute before:content-[' '] before:w-[3px] before:h-[50px] before:bg-white before:top-[-12%] group-hover:before:top-[45%] before:left-[43%] before:translate-[-50%] before:duration-500"
+            {AboutCultureData.map((item, i) => (
+              <SwiperSlide>
+                <div
+                  key={i}
+                  className="max-w-[455px]  relative group overflow-hidden lg:pr-[40px]"
                 >
-                  <Image
-                    src={CultureOne}
-                    alt="CultureImg"
-                    className="rounded-l-[20px]"
-                  />
-                </Link>
-                <span className="bg-[#0a050513] absolute top-0 left-0 w-full group-hover:h-full rounded-[20px] "></span>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="max-w-[455px]  relative group overflow-hidden pr-[40px]">
-                <Link
-                  href="/"
-                  className="relative overflow-hidden	 rounded-[20px] max-h-[500px] after:absolute after:content-[' '] after:w-[50px] after:h-[3px] after:bg-white after:top-[51%] after:duration-500 after:left-[-12%] group-hover:after:left-[35%] after:translate-[-50%] before:absolute before:content-[' '] before:w-[3px] before:h-[50px] before:bg-white before:top-[-12%] group-hover:before:top-[45%] before:left-[43%] before:translate-[-50%] before:duration-500"
-                >
-                  <Image
-                    src={CultureTwo}
-                    alt="CultureImg"
-                    className="rounded-l-[20px]"
-                  />
-                </Link>
-                <span className="bg-[#0a050513] absolute top-0 left-0 w-full group-hover:h-full rounded-[20px] "></span>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="max-w-[455px]  relative group overflow-hidden pr-[40px]">
-                <Link
-                  href="/"
-                  className="relative overflow-hidden	 rounded-[20px] max-h-[500px] after:absolute after:content-[' '] after:w-[50px] after:h-[3px] after:bg-white after:top-[51%] after:duration-500 after:left-[-12%] group-hover:after:left-[35%] after:translate-[-50%] before:absolute before:content-[' '] before:w-[3px] before:h-[50px] before:bg-white before:top-[-12%] group-hover:before:top-[45%] before:left-[43%] before:translate-[-50%] before:duration-500"
-                >
-                  <Image
-                    src={CultureThree}
-                    alt="CultureImg"
-                    className="rounded-l-[20px]"
-                  />
-                </Link>
-                <span className="bg-[#0a050513] absolute top-0 left-0 w-full group-hover:h-full rounded-[20px] "></span>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="max-w-[455px]  relative group overflow-hidden pr-[40px]">
-                <Link
-                  href="/"
-                  className="relative overflow-hidden	 rounded-[20px] max-h-[500px] after:absolute after:content-[' '] after:w-[50px] after:h-[3px] after:bg-white after:top-[51%] after:duration-500 after:left-[-12%] group-hover:after:left-[35%] after:translate-[-50%] before:absolute before:content-[' '] before:w-[3px] before:h-[50px] before:bg-white before:top-[-12%] group-hover:before:top-[45%] before:left-[43%] before:translate-[-50%] before:duration-500"
-                >
-                  <Image
-                    src={CultureOne}
-                    alt="CultureImg"
-                    className="rounded-l-[20px]"
-                  />
-                </Link>
-                <span className="bg-[#0a050513] absolute top-0 left-0 w-full group-hover:h-full rounded-[20px] "></span>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="max-w-[455px]  relative group overflow-hidden pr-[40px]">
-                <Link
-                  href="/"
-                  className="relative overflow-hidden	 rounded-[20px] max-h-[500px] after:absolute after:content-[' '] after:w-[50px] after:h-[3px] after:bg-white after:top-[51%] after:duration-500 after:left-[-12%] group-hover:after:left-[35%] after:translate-[-50%] before:absolute before:content-[' '] before:w-[3px] before:h-[50px] before:bg-white before:top-[-12%] group-hover:before:top-[45%] before:left-[43%] before:translate-[-50%] before:duration-500"
-                >
-                  <Image
-                    src={CultureTwo}
-                    alt="CultureImg"
-                    className="rounded-l-[20px]"
-                  />
-                </Link>
-                <span className="bg-[#0a050513] absolute top-0 left-0 w-full group-hover:h-full rounded-[20px] "></span>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="max-w-[455px]  relative group overflow-hidden pr-[40px]">
-                <Link
-                  href="/"
-                  className="relative overflow-hidden	 rounded-[20px] max-h-[500px] after:absolute after:content-[' '] after:w-[50px] after:h-[3px] after:bg-white after:top-[51%] after:duration-500 after:left-[-12%] group-hover:after:left-[35%] after:translate-[-50%] before:absolute before:content-[' '] before:w-[3px] before:h-[50px] before:bg-white before:top-[-12%] group-hover:before:top-[45%] before:left-[43%] before:translate-[-50%] before:duration-500"
-                >
-                  <Image
-                    src={CultureThree}
-                    alt="CultureImg"
-                    className="rounded-l-[20px]"
-                  />
-                </Link>
-                <span className="bg-[#0a050513] absolute top-0 left-0 w-full group-hover:h-full rounded-[20px] "></span>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="max-w-[455px]  relative group overflow-hidden pr-[40px]">
-                <Link
-                  href="/"
-                  className="relative overflow-hidden	 rounded-[20px] max-h-[500px] after:absolute after:content-[' '] after:w-[50px] after:h-[3px] after:bg-white after:top-[51%] after:duration-500 after:left-[-12%] group-hover:after:left-[35%] after:translate-[-50%] before:absolute before:content-[' '] before:w-[3px] before:h-[50px] before:bg-white before:top-[-12%] group-hover:before:top-[45%] before:left-[43%] before:translate-[-50%] before:duration-500"
-                >
-                  <Image
-                    src={CultureOne}
-                    alt="CultureImg"
-                    className="rounded-l-[20px]"
-                  />
-                </Link>
-                <span className="bg-[#0a050513] absolute top-0 left-0 w-full group-hover:h-full rounded-[20px] "></span>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="max-w-[455px]  relative group overflow-hidden pr-[40px]">
-                <Link
-                  href="/"
-                  className="relative overflow-hidden	 rounded-[20px] max-h-[500px] after:absolute after:content-[' '] after:w-[50px] after:h-[3px] after:bg-white after:top-[51%] after:duration-500 after:left-[-12%] group-hover:after:left-[35%] after:translate-[-50%] before:absolute before:content-[' '] before:w-[3px] before:h-[50px] before:bg-white before:top-[-12%] group-hover:before:top-[45%] before:left-[43%] before:translate-[-50%] before:duration-500"
-                >
-                  <Image
-                    src={CultureTwo}
-                    alt="CultureImg"
-                    className="rounded-l-[20px]"
-                  />
-                </Link>
-                <span className="bg-[#0a050513] absolute top-0 left-0 w-full group-hover:h-full rounded-[20px] "></span>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="max-w-[455px]  relative group overflow-hidden pr-[40px]">
-                <Link
-                  href="/"
-                  className="relative overflow-hidden	 rounded-[20px] max-h-[500px] after:absolute after:content-[' '] after:w-[50px] after:h-[3px] after:bg-white after:top-[51%] after:duration-500 after:left-[-12%] group-hover:after:left-[35%] after:translate-[-50%] before:absolute before:content-[' '] before:w-[3px] before:h-[50px] before:bg-white before:top-[-12%] group-hover:before:top-[45%] before:left-[43%] before:translate-[-50%] before:duration-500"
-                >
-                  <Image
-                    src={CultureThree}
-                    alt="CultureImg"
-                    className="rounded-l-[20px]"
-                  />
-                </Link>
-                <span className="bg-[#0a050513] absolute top-0 left-0 w-full group-hover:h-full rounded-[20px] "></span>
-              </div>
-            </SwiperSlide>
+                  <Link
+                    href="/"
+                    className="relative overflow-hidden	 rounded-[20px] max-h-[500px] after:absolute after:content-[' '] after:w-[50px] after:h-[3px] after:bg-white after:top-[51%] after:duration-500 after:left-[-12%] group-hover:after:left-[35%] after:translate-[-50%] before:absolute before:content-[' '] before:w-[3px] before:h-[50px] before:bg-white before:top-[-12%] group-hover:before:top-[45%] before:left-[43%] before:translate-[-50%] before:duration-500"
+                  >
+                    <Image
+                      src={item.images}
+                      alt="CultureImg"
+                      className="rounded-l-[20px] w-full"
+                    />
+                  </Link>
+                  <span className="bg-[#0a050513] absolute top-0 left-0 w-full group-hover:h-full rounded-[20px] "></span>
+                </div>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>
