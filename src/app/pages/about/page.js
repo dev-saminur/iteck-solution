@@ -18,9 +18,9 @@ const Abouts = () => {
         <Philosophy />
         <AboutService />
         <AboutBusiness />
-        <AboutCulture />
+        {/*  <AboutCulture />
         <AboutLeader />
-        <AboutContact />
+        <AboutContact /> */}
       </Layout>
     </>
   );
