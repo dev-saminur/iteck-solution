@@ -11,33 +11,32 @@ import Link from "next/link";
 const AboutService = () => {
   return (
     <>
-      <div className="bg-[#ECF5FF] py-8">
+      <div className="bg-[#ECF5FF] py-8  ">
         <Container>
-          <div className="grid grid-cols-2 gap-x-[100px]">
-            <div>
-              <Image
-                src={ManArrow}
-                alt="AboutService"
-                width={680}
-                height={516}
-                className="ml-[-200px]"
-              />
-            </div>
-            <div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-[100px]">
+            <Image
+              src={ManArrow}
+              alt="AboutService"
+              width={680}
+              height={516}
+              className="xl:ml-[-200px] w-full h-full"
+            />
+
+            <div className="lg:px-0 px-4">
               <div className="mb-[50px]">
-                <h2 className="text-[45px] font-bold text-[#212529] leading-[1.4] mb-5 z-50">
+                <h2 className="text-[30px] lg:text-[45px] font-bold text-[#212529] leading-[1.4] mb-5 z-50">
                   Our
                   <span className="text-[#157EFB] ml-2  relative after:absolute after:content-[''] after:bottom-0 after:left-2 after:w-[100%] after:h-[40%] after:bg-[#157EFB] after:opacity-[.1]">
                     Services
                   </span>
                 </h2>
-                <p className="text-xs text-[#666666] leading-[1.7] pr-[260px]">
+                <p className="text-xs text-[#666666] leading-[1.7] lg:pr-[125px] xl:pr-[260px]">
                   With Iteck Marketplace, choose from hundreds of payment
                   gateways for your customers.
                 </p>
               </div>
               <div>
-                <Flex>
+                <Flex className="flex-wrap sm:flex-nowrap sm:flex ">
                   <div className="w-[73px] mr-6">
                     <Image
                       src={SerPeople}
@@ -50,13 +49,13 @@ const AboutService = () => {
                     <h5 className="text-lg text-[#000] font-bold leading-[1.4] capitalize">
                       IT Consultation
                     </h5>
-                    <p className="text-xs text-[#666] mt-1 font-normal leading-[1.7] pr-[280px]">
+                    <p className="text-xs text-[#666] mt-1 font-normal leading-[1.7] pr-[60px] lg:pr-[125px] xl:pr-[190px] xxl:pr-[280px]">
                       Nanotechnology immersion along the information high will
                       close the loop on focusing solely
                     </p>
                   </div>
                 </Flex>
-                <Flex>
+                <Flex className="flex-wrap sm:flex-nowrap sm:flex ">
                   <div className="w-[73px] mr-6">
                     <Image
                       src={SerCoder}
@@ -69,13 +68,13 @@ const AboutService = () => {
                     <h5 className="text-lg text-[#000] font-bold leading-[1.4] capitalize">
                       Software Design & Development
                     </h5>
-                    <p className="text-xs text-[#666] mt-1 font-normal leading-[1.7] pr-[255px]">
+                    <p className="text-xs text-[#666] mt-1 font-normal leading-[1.7] pr-[60px] lg:pr-[125px] xl:pr-[165px] xxl:pr-[267px]">
                       Our top-notch Experts with much years of experience
                       certail will give best solutions for your business
                     </p>
                   </div>
                 </Flex>
-                <Flex>
+                <Flex className="flex-wrap lg:flex ">
                   <div className="w-[73px]">
                     <Image
                       src={SerCloud}
@@ -88,7 +87,7 @@ const AboutService = () => {
                     <h5 className="text-lg text-[#000] font-bold leading-[1.4] capitalize">
                       Cloud Services
                     </h5>
-                    <p className="text-xs text-[#666] mt-1 font-normal leading-[1.7] ">
+                    <p className="text-xs text-[#666] mt-1 font-normal leading-[1.7] pr-[75px] lg:pr-[10px] xl:pr-0">
                       Customer support is always our number one priority.
                     </p>
                   </div>
