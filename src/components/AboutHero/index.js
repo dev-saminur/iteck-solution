@@ -19,7 +19,7 @@ const AboutHero = () => {
             <div className="grid grid-cols-12">
               <div className="col-start-1 col-end-13 lg:col-start-3 lg:col-end-11 ">
                 <div className="relative  text-center z-40">
-                  <h2 className="text-[29px] sm:text-[30px] lg:text-[55px] text-black font-bold leading-[1.2] tracking-[-2px] capitalize px-0 lg:px-[80px]">
+                  <h2 className="text-[29px] sm:text-[30px] lg:text-[55px] text-black font-bold leading-[1.2] tracking-[-2px] capitalize px-0  lg:px-[0px]">
                     We provide perfect <br /> IT Solutions & Technology for any
                     Startups
                   </h2>
@@ -40,19 +40,19 @@ const AboutHero = () => {
                     height={25}
                     src={HeadPen}
                     alt="Heade-pen"
-                    className="absolute  left-[83%] bottom-[47%]  sm:left-[97%] md:left-[87%]  sm:bottom-[53%] lg:bottom-[78px] xl:bottom-[75px] lg:left-[71%]  xl:left-[71%] overflow-hidden"
+                    className="absolute  left-[83%] bottom-[47%]  sm:left-[95%] md:left-[87%]  sm:bottom-[53%] lg:bottom-[78px] xl:bottom-[75px] lg:left-[71%]  xl:left-[71%] overflow-hidden"
                   />
                   <Image
                     src={LineChart}
                     width={267}
                     height={243}
-                    className="w-[14%]  max:w-[267px] absolute top-0 right-0 lg:top-[50px] xl:top-0 lg:right-[-100px] xl:right-[-225px] animate-[shakeamimate] animate-infinite animate-duration-[3000ms] animate-ease-in-out animate-alternate"
+                    className="w-[14%]  max:w-[267px] xl:w-[267px] absolute top-0 right-0 lg:top-[50px] xl:top-0 lg:right-[-100px] xl:right-[-198px] animate-[shakeamimate] animate-infinite animate-duration-[3000ms] animate-ease-in-out animate-alternate"
                   />
                   <Image
                     src={RattingImg}
                     width={344}
                     height={258}
-                    className="w-[18%] xl:w-[344px] absolute top-[86%]  lg:top-[90%] xl:top-[83%] left-0 md:left-[100px] lg:left-0 xl:left-[-210px] animate-[shakeamimate] animate-infinite animate-duration-[3000ms] animate-ease-in-out animate-alternate"
+                    className="w-[18%] xl:w-[344px] absolute top-[86%]  lg:top-[90%] xl:top-[60%] left-0 md:left-[100px] lg:left-0 xl:left-[-70px] animate-[shakeamimate] animate-infinite animate-duration-[3000ms] animate-ease-in-out animate-alternate"
                   />
                 </div>
               </div>
