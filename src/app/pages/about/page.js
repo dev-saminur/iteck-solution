@@ -20,7 +20,7 @@ const Abouts = () => {
         <AboutBusiness />
         <AboutCulture />
         <AboutLeader />
-        {/*      <AboutContact /> */}
+        <AboutContact />
       </Layout>
     </>
   );
