@@ -31,6 +31,28 @@ const TopCard = () => {
           delay: 3500,
           disableOnInteraction: false,
         }}
+        breakpoints={{
+          375: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+          },
+          992: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+          1200: {
+            slidesPerView: 6,
+            spaceBetween: 20,
+          },
+        }}
         className="mySwiper"
       >
         {TopCardData.map((item, i) => (
@@ -41,10 +63,10 @@ const TopCard = () => {
             >
               <Link href="/" className="text-center">
                 <Image src={item.icon} className=" mx-auto mb-10 shadow-2xl" />
-                <h5 className="text-[17px] text-[#000] mb-[15px] font-bold leading-[1.4] ">
+                <h5 className="text-[15px] xxl:text-[17px] text-[#000] mb-[15px] font-bold leading-[1.4] ">
                   {item.title}
                 </h5>
-                <p className="text-[13px] text-[#777] leading-[1.8]">
+                <p className="text-[11px] xxl:text-[13px] text-[#777] leading-[1.8]">
                   {item.peratitle}
                 </p>
               </Link>
