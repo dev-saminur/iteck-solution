@@ -19,8 +19,8 @@ const Abouts = () => {
         <AboutService />
         <AboutBusiness />
         <AboutCulture />
-        {/* <AboutLeader />
-        <AboutContact /> */}
+        <AboutLeader />
+        {/*      <AboutContact /> */}
       </Layout>
     </>
   );
