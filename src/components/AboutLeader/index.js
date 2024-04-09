@@ -22,7 +22,7 @@ const AboutLeader = () => {
             Profressional & Friendly is our slogan. Meet our leaders
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-5 lg:gap-y-0 lg:gap-5 xl:gap-x-10 justify-between px-0 sm:px-4 xl:px-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-5 lg:gap-y-0 lg:gap-5 gap-x-4 xl:gap-x-10 justify-between px-0 sm:px-4 xl:px-0">
           {LeaderData.map((item, i) => (
             <div
               key={i}
