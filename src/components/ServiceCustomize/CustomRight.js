@@ -15,7 +15,7 @@ const CustomRight = () => {
           width={700}
           height={480}
           alt="CustomizeImgOne"
-          className="absolute top-[-110px] right-[0%] object-contain z-10 animate-spin animate-duration-[90000ms] animate-ease-linear "
+          className="absolute w-[85%] sm:w-[67%] top-[10px] lg:top-[-10px]  xl:top-[-110px] right-[20px] sm:right-[45px] md:right-[66px] lg:right-[56px] xl:right-[12%]  xxl:right-[0%] object-contain z-10 animate-spin animate-duration-[90000ms] animate-ease-linear "
         />
         <Image
           src={CustomizeImgTwo}
@@ -36,14 +36,14 @@ const CustomRight = () => {
           width={750}
           height={500}
           alt="CustomizeImgFour"
-          className="absolute top-0 right-[53px] z-40 animate-[topbottom] animate-infinite animate-duration-[8000ms] animate-ease-in-out animate-alternate"
+          className="absolute top-0 right-0 z-40 animate-[topbottom] animate-infinite animate-duration-[8000ms] animate-ease-in-out animate-alternate"
         />
         <Image
           src={CustomizeImgFive}
           width={750}
           height={444}
           alt="CustomizeImgFive"
-          className="absolute top-[-20%] left-[45px] z-50 animate-[topbottom] animate-infinite animate-duration-[6000ms] animate-ease-in-out animate-alternate  "
+          className="absolute top-[-20%] left-[4px] lg:left-0 xxl:left-[17%] z-50 animate-[topbottom] animate-infinite animate-duration-[6000ms] animate-ease-in-out animate-alternate  "
         />
       </div>
     </>
