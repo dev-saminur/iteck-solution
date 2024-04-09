@@ -22,13 +22,13 @@ const SerClientReview = () => {
       <div className="py-[100px] bg-[#F3F7FE]">
         <Container>
           <div className="mb-[70px] text-center">
-            <h2 className="text-[45px] font-bold text-[#212529] leading-[1.4] mb-5 z-50">
+            <h2 className="text-[30px] lg:text-[45px] font-bold text-[#212529] leading-[1.4] mb-5 z-50">
               Clients
               <span className="text-[#157EFB] ml-2  relative after:absolute after:content-[''] after:bottom-0 after:left-0 after:w-[100%] after:h-[40%] after:bg-[#157EFB] after:opacity-[.1]">
                 Reviews
               </span>
             </h2>
-            <p className="text-[15px] text-[#666666] leading-[1.7]  text-center px-[350px]">
+            <p className=" text-[15px] text-[#666666] leading-[1.7]  text-center px-0 sm:px-[150px] lg:px-[350px]">
               Iteck loved from thoudsands customer worldwide and get trusted
               from big companies.
             </p>
@@ -48,21 +48,29 @@ const SerClientReview = () => {
             disableOnInteraction: false,
           }}
           breakpoints={{
+            375: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
             640: {
-              slidesPerView: 2,
+              slidesPerView: 1,
               spaceBetween: 20,
             },
             768: {
-              slidesPerView: 4,
+              slidesPerView: 1,
               spaceBetween: 40,
             },
-            1024: {
+            992: {
+              slidesPerView: 3,
+              spaceBetween: 50,
+            },
+            1200: {
               slidesPerView: 4,
               spaceBetween: 50,
             },
           }}
         >
-          <div className="grid grid-cols-4 gap-x-10 ">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-x-10 lg:px-0 px-4">
             <SwiperSlide>
               <div className=" text-center bg-white py-10 px-[30px] hover:shadow-2xl group rounded-[15px] duration-200">
                 <Flex className="justify-center gap-x-2 mb-[15px]">
@@ -93,7 +101,7 @@ const SerClientReview = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="max-h-[353px] text-center bg-white py-10 px-[30px] hover:shadow-2xl group rounded-[15px] duration-200">
+              <div className="text-center bg-white py-10 px-[30px] hover:shadow-2xl group rounded-[15px] duration-200">
                 <Flex className="justify-center gap-x-2 mb-[15px]">
                   <IoIosStar className="text-[#27A700]" />
                   <IoIosStar className="text-[#27A700]" />
@@ -121,7 +129,7 @@ const SerClientReview = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="max-h-[384px] text-center bg-white py-10 px-[30px] hover:shadow-2xl group rounded-[15px] duration-200">
+              <div className="text-center bg-white py-10 px-[30px] hover:shadow-2xl group rounded-[15px] duration-200">
                 <Flex className="justify-center gap-x-2 mb-[15px]">
                   <IoIosStar className="text-[#27A700]" />
                   <IoIosStar className="text-[#27A700]" />
@@ -149,7 +157,7 @@ const SerClientReview = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="max-h-[353px] text-center bg-white py-10 px-[30px] hover:shadow-2xl group rounded-[15px] duration-200">
+              <div className="text-center bg-white py-10 px-[30px] hover:shadow-2xl group rounded-[15px] duration-200">
                 <Flex className="justify-center gap-x-2 mb-[15px]">
                   <IoIosStar className="text-[#27A700]" />
                   <IoIosStar className="text-[#27A700]" />
@@ -206,7 +214,7 @@ const SerClientReview = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="max-h-[353px] text-center bg-white py-10 px-[30px] hover:shadow-2xl group rounded-[15px] duration-200">
+              <div className="text-center bg-white py-10 px-[30px] hover:shadow-2xl group rounded-[15px] duration-200">
                 <Flex className="justify-center gap-x-2 mb-[15px]">
                   <IoIosStar className="text-[#27A700]" />
                   <IoIosStar className="text-[#27A700]" />
@@ -234,7 +242,7 @@ const SerClientReview = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="max-h-[384px] text-center bg-white py-10 px-[30px] hover:shadow-2xl group rounded-[15px] duration-200">
+              <div className=" text-center bg-white py-10 px-[30px] hover:shadow-2xl group rounded-[15px] duration-200">
                 <Flex className="justify-center gap-x-2 mb-[15px]">
                   <IoIosStar className="text-[#27A700]" />
                   <IoIosStar className="text-[#27A700]" />
@@ -262,7 +270,7 @@ const SerClientReview = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="max-h-[353px] text-center bg-white py-10 px-[30px] hover:shadow-2xl group rounded-[15px] duration-200">
+              <div className="text-center bg-white py-10 px-[30px] hover:shadow-2xl group rounded-[15px] duration-200">
                 <Flex className="justify-center gap-x-2 mb-[15px]">
                   <IoIosStar className="text-[#27A700]" />
                   <IoIosStar className="text-[#27A700]" />
