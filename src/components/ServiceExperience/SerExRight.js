@@ -9,13 +9,13 @@ import ExperienceFive from "../../../public/assets/service/exper5.png";
 const SerExRight = () => {
   return (
     <>
-      <div className="relative">
+      <div className="relative ">
         <Image
           src={ExperienceOne}
           width={173}
           height={172}
           alt="ExperienceOne"
-          className="absolute top-[20%] right-[5%] z-10 animate-spin animate-duration-[40000ms] animate-ease-linear animate-reverse"
+          className="absolute  top-[20%] right-[5%] z-10 animate-spin animate-duration-[40000ms] animate-ease-linear animate-reverse"
         />
         <Image
           src={ExperienceTwo}
@@ -29,21 +29,21 @@ const SerExRight = () => {
           width={666}
           height={455}
           alt="ExperienceOne"
-          className="absolute top-0 right-[135px] z-20 animate-[topbottomscaledown] animate-infinite animate-duration-[10000ms] animate-ease-in-out animate-alternate"
+          className="absolute top-0 right-0 md:right-[12%] xl:right-[135px] z-20 animate-[topbottomscaledown] animate-infinite animate-duration-[10000ms] animate-ease-in-out animate-alternate"
         />
         <Image
           src={ExperienceFour}
           width={718}
           height={417}
           alt="ExperienceOne"
-          className="absolute top-0 right-[130px] z-20 animate-[topbottomscaledown] animate-infinite animate-duration-[10000ms] animate-ease-in-out animate-alternate"
+          className="absolute top-0 right-0 md:right-[9%] xl:right-[130px] z-20 animate-[topbottomscaledown] animate-infinite animate-duration-[10000ms] animate-ease-in-out animate-alternate"
         />
         <Image
           src={ExperienceFive}
           width={458}
           height={446}
           alt="ExperienceOne"
-          className="absolute top-[-20%] left-[-170px] animate-spin animate-duration-[40000ms] animate-ease-linear  z-10"
+          className="absolute top-[-46px] left-[0%] xl:top-[-20%] xl:left-[-170px] animate-spin animate-duration-[40000ms] animate-ease-linear  z-10 xl:scale-100 scale-75"
         />
       </div>
     </>
