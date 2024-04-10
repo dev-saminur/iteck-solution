@@ -16,7 +16,7 @@ const AllNews = () => {
       <div className="py-[100px] border-y border-solid border-[#C2C2C2]">
         <Container>
           <div className="grid grid-cols-12">
-            <div className="col-start-2 col-end-8">
+            <div className="col-start-1 col-end-[-1] lg:col-start-1 xl:col-start-2 lg:col-end-8">
               {/* {AllNewsData.map((item, i) => (
                 <div key={i} className="my-5">
                   <Flex className=" border-b border-solid  items-center pb-5">
@@ -96,8 +96,8 @@ const AllNews = () => {
               ))} */}
               <Pagination itemsPerPage={1} />
             </div>
-            <div className="col-start-8 col-end-12">
-              <div className=" pl-[50px]">
+            <div className="col-start-1 col-end-[-1] lg:col-start-8 lg:col-end-12">
+              <div className="pl-0 lg:pl-[50px] px-4 lg:px-0">
                 <RecentPost />
                 <Catagories />
                 <NewsLetter />
