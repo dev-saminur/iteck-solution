@@ -25,7 +25,7 @@ import Flex from "../helpers/Flex/Flex";
 const BlogBanner = () => {
   return (
     <>
-      <div className="py-[100px]">
+      <div className="py-[100px] xl:px-0 px-4">
         <Container>
           <div className="mb-[70px] text-center">
             <h2 className="text-[45px] font-bold text-[#212529] leading-[1.4] mb-5 z-50">
@@ -58,10 +58,10 @@ const BlogBanner = () => {
                 delay: 3500,
                 disableOnInteraction: false,
               }}
-              className="mySwiper "
+              className="mySwiper relative overflow-hidden"
             >
               <SwiperSlide>
-                <div className="max-w-[1140px] max-h-[500px] mx-auto rounded-[20px] relative overflow-hidden">
+                <div className="max-w-[1140px] h-[500px] mx-auto rounded-[20px] relative overflow-hidden">
                   <Image
                     src={BlogBannerImg}
                     width={1140}
@@ -70,7 +70,7 @@ const BlogBanner = () => {
                     className="w-full h-full rounded-[20px] bg-center bg-cover object-cover"
                   />
                   <div className="bg-gradient-to-b from-[#00000015] to-[#121415]  absolute top-0 left-0 w-full h-full z-10 "></div>
-                  <div className="max-w-[550px] absolute bottom-[80px] left-[80px] z-30">
+                  <div className="w-full lg:w-[550px] absolute bottom-[80px] left-4 lg:left-[80px] z-30">
                     <Flex className="mt-4 items-center">
                       <Link
                         href="#"
@@ -92,11 +92,11 @@ const BlogBanner = () => {
                     <div className="mt-4 ">
                       <Link
                         href="#"
-                        className="text-white text-[32px] font-bold hover:text-[#0d6ef] ease-in-out duration-75  uppercase"
+                        className="text-white text-[18px] sm:text-2xl lg:leading-[1.4] lg:text-[32px] pr-4  lg:pr-0 leading-[1.4] font-bold hover:text-[#0d6ef] ease-in-out duration-75  uppercase"
                       >
                         Solutions For Big Data Issue, Expert Perspective
                       </Link>
-                      <p className="text-white text-[13px] mt-2 pr-[116px] opacity-100">
+                      <p className="text-white text-[13px] mt-2 leading-[1.7] pr-7 lg:pr-[116px] opacity-100">
                         If theres one way that wireless technology has changed
                         the way we work, its that will everyone is now connected
                         [...]
@@ -106,7 +106,7 @@ const BlogBanner = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="max-w-[1140px] max-h-[500px] mx-auto rounded-[20px] relative overflow-hidden">
+                <div className="max-w-[1140px] h-[500px] mx-auto rounded-[20px] relative overflow-hidden">
                   <Image
                     src={BlogBannerImg1}
                     width={1140}
@@ -115,7 +115,7 @@ const BlogBanner = () => {
                     className="w-full h-full rounded-[20px] bg-center bg-cover object-cover"
                   />
                   <div className="bg-gradient-to-b from-[#00000015] to-[#121415]  absolute top-0 left-0 w-full h-full z-10 "></div>
-                  <div className="max-w-[550px] absolute bottom-[80px] left-[80px] z-30">
+                  <div className="w-full lg:w-[550px] absolute bottom-[80px] left-4 lg:left-[80px] z-30">
                     <Flex className="mt-4 items-center">
                       <Link
                         href="#"
@@ -137,11 +137,11 @@ const BlogBanner = () => {
                     <div className="mt-4 ">
                       <Link
                         href="#"
-                        className="text-white text-[32px] font-bold hover:text-[#0d6ef] ease-in-out duration-75  uppercase"
+                        className="text-white text-[18px] sm:text-2xl lg:leading-[1.4] lg:text-[32px] pr-4 lg:pr-0 leading-[1.4] font-bold hover:text-[#0d6ef] ease-in-out duration-75  uppercase"
                       >
                         Solutions For Big Data Issue, Expert Perspective
                       </Link>
-                      <p className="text-white text-[13px] mt-2 pr-[116px] opacity-100">
+                      <p className="text-white text-[13px] mt-2 leading-[1.7] pr-7 lg:pr-[116px] opacity-100">
                         If theres one way that wireless technology has changed
                         the way we work, its that will everyone is now connected
                         [...]
@@ -151,16 +151,16 @@ const BlogBanner = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="max-w-[1140px] max-h-[500px] mx-auto rounded-[20px] relative overflow-hidden">
+                <div className="max-w-[1140px] h-[500px] mx-auto rounded-[20px] relative overflow-hidden">
                   <Image
                     src={BlogBannerImg2}
                     width={1140}
                     height={500}
                     alt="blog-img-banner"
-                    className="w-full h-full rounded-[20px] object-cover  bg-center bg-cover"
+                    className="w-full h-full rounded-[20px] bg-center bg-cover object-cover"
                   />
                   <div className="bg-gradient-to-b from-[#00000015] to-[#121415]  absolute top-0 left-0 w-full h-full z-10 "></div>
-                  <div className="max-w-[550px] absolute bottom-[80px] left-[80px] z-30">
+                  <div className="w-full lg:w-[550px] absolute bottom-[80px] left-4 lg:left-[80px] z-30">
                     <Flex className="mt-4 items-center">
                       <Link
                         href="#"
@@ -182,11 +182,11 @@ const BlogBanner = () => {
                     <div className="mt-4 ">
                       <Link
                         href="#"
-                        className="text-white text-[32px] font-bold hover:text-[#0d6ef] ease-in-out duration-75  uppercase"
+                        className="text-white text-[18px] sm:text-2xl lg:text-[32px] leading-[1.4] lg:leading-[1.4] pr-4 lg:pr-0 font-bold hover:text-[#0d6ef] ease-in-out duration-75  uppercase"
                       >
                         Solutions For Big Data Issue, Expert Perspective
                       </Link>
-                      <p className="text-white text-[13px] mt-2 pr-[116px] opacity-100">
+                      <p className="text-white text-[13px] mt-2 leading-[1.7] pr-7 lg:pr-[116px] opacity-100">
                         If theres one way that wireless technology has changed
                         the way we work, its that will everyone is now connected
                         [...]
@@ -195,10 +195,10 @@ const BlogBanner = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              <button className="arrow-left arrow z-50 absolute top-[50%] translate-y-[-50%] left-[100px] bg-[#FFFFFF] rotate-45 rounded-[10px] w-[50px] h-[50px] ">
+              <button className="arrow-left arrow z-50 absolute top-[50%] translate-y-[-50%] left-[-33px] lg:left-[-28px] xl:left-0 xxl:left-[100px] bg-[#FFFFFF] rotate-45 rounded-[10px] w-[50px] h-[50px] ">
                 <LiaAngleLeftSolid className="text-xl text-[#0066FF] ml-[25px] mb-[19px] rotate-[-45deg]" />
               </button>
-              <button className="arrow-right arrow absolute top-[50%] z-50 translate-y-[-50%] right-[100px] bg-[#FFFFFF] rotate-45 rounded-[10px] w-[50px] h-[50px] ">
+              <button className="arrow-right arrow absolute top-[50%] z-50 translate-y-[-50%] right-[-32px] lg:right-[-27px] xl:right-[0px] xxl:right-[100px] bg-[#FFFFFF] rotate-45 rounded-[10px] w-[50px] h-[50px] ">
                 <LiaAngleRightSolid className="text-xl text-[#0066FF] rotate-[-45deg] ml-[5px] mb-[-20px]" />
               </button>
             </Swiper>
