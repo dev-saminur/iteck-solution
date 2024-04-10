@@ -13,16 +13,19 @@ import BlogBannerImg1 from "../../../public/assets/blogs/blogbanner1.png";
 const PopularPost = () => {
   return (
     <>
-      <div className="pt-[100px] pb-[300px]">
+      <div className="pt-2 pb-12 lg:pt-[100px] lg:pb-[300px] xl:px-0 px-2">
         <Container>
-          <div className="max-w-[1160px] mx-auto ml-[165px]">
-            <div className="grid grid-cols-3  ">
-              <div className=" w-full p-4    lg:p-0 lg:w-[317px] max-h-[200px] z-50 mb-10 lg:mb-0 lg:border-0 border border-solid  border-[#212529]">
+          <div className="max-w-[1160px] mx-auto ml-0 xl:ml-[40px] xxl:ml-[165px]">
+            <h5 className="text-xl text-[#212529] font-bold tracking-[2] text-center mb-[50px] uppercase">
+              Popular Posts
+            </h5>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-6 ">
+              <div className=" w-full p-4    lg:p-0 lg:w-[317px] max-h-[200px] z-50 mb-[180px] lg:mb-0  ">
                 <Image
                   width={1400}
                   src={BlogBannerImg1}
                   alt="BlogImg"
-                  className="w-full h-full rounded-[20px]  "
+                  className="w-full h-full rounded-[20px] object-cover "
                 />
                 <Flex className="mt-4 items-center">
                   <Link
@@ -45,7 +48,7 @@ const PopularPost = () => {
                 <div className="mt-4 ">
                   <Link
                     href="#"
-                    className="text-[#212529] text-base lg:text-xl font-bold hover:text-[#0d6efd] ease-in-out duration-75  uppercase"
+                    className="text-[#212529] text-lg lg:text-xl font-bold hover:text-[#0d6efd] ease-in-out duration-75  uppercase"
                   >
                     Crypto Trend 2023
                   </Link>
@@ -88,12 +91,12 @@ const PopularPost = () => {
                   </Flex>
                 </div>
               </div>
-              <div className=" w-full p-4    lg:p-0 lg:w-[317px] max-h-[200px] z-50 mb-10 lg:mb-0 lg:border-0 border border-solid  border-[#212529]">
+              <div className=" w-full p-4    lg:p-0 lg:w-[317px] max-h-[200px] z-50 mb-[180px] lg:mb-0  py-6 lg:py-0">
                 <Image
                   width={1400}
                   src={BlogBannerImg}
                   alt="BlogImg"
-                  className="w-full h-full rounded-[20px]  "
+                  className="w-full h-full rounded-[20px] object-cover "
                 />
                 <Flex className="mt-4 items-center">
                   <Link
@@ -116,7 +119,7 @@ const PopularPost = () => {
                 <div className="mt-4 ">
                   <Link
                     href="#"
-                    className="text-[#212529] text-base lg:text-xl font-bold hover:text-[#0d6efd] ease-in-out duration-75  uppercase"
+                    className="text-[#212529] text-lg lg:text-xl font-bold hover:text-[#0d6efd] ease-in-out duration-75  uppercase"
                   >
                     AI With Fingerprint
                   </Link>
@@ -159,12 +162,12 @@ const PopularPost = () => {
                   </Flex>
                 </div>
               </div>
-              <div className=" w-full p-4    lg:p-0 lg:w-[317px] max-h-[200px] z-50 mb-10 lg:mb-0 lg:border-0 border border-solid  border-[#212529]">
+              <div className=" w-full p-4    lg:p-0 lg:w-[317px] max-h-[200px] z-50 mb-[180px] lg:mb-0  ">
                 <Image
                   width={1400}
                   src={BlogImg}
                   alt="BlogImg"
-                  className="w-full h-full rounded-[20px]  "
+                  className="w-full h-full rounded-[20px] object-cover "
                 />
                 <Flex className="mt-4 items-center">
                   <Link
@@ -187,7 +190,7 @@ const PopularPost = () => {
                 <div className="mt-4 ">
                   <Link
                     href="#"
-                    className="text-[#212529] text-base lg:text-xl font-bold hover:text-[#0d6efd] ease-in-out duration-75  uppercase"
+                    className="text-[#212529] text-lg lg:text-xl font-bold hover:text-[#0d6efd] ease-in-out duration-75  uppercase"
                   >
                     NFT Game! New Oppoturnity{" "}
                   </Link>
