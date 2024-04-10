@@ -43,7 +43,7 @@ const SerExRight = () => {
           width={458}
           height={446}
           alt="ExperienceOne"
-          className="absolute w-[59%] top-[-46px] left-[0%] xl:top-[-20%] xl:left-[-170px] animate-spin animate-duration-[40000ms] animate-ease-linear  z-10 "
+          className="absolute w-[59%] top-[-46px] left:[7%] sm:left-[0%] xl:top-[-20%] xl:left-[-170px] animate-spin animate-duration-[40000ms] animate-ease-linear  z-10 "
         />
       </div>
     </>
