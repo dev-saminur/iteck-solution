@@ -15,7 +15,7 @@ const CustomRight = () => {
           width={700}
           height={480}
           alt="CustomizeImgOne"
-          className="absolute w-[85%] sm:w-[67%] top-[10px] lg:top-[-10px]  xl:top-[-110px] right-[20px] sm:right-[45px] md:right-[66px] lg:right-[56px] xl:right-[12%]  xxl:right-[0%] object-contain z-10 animate-spin animate-duration-[90000ms] animate-ease-linear "
+          className="absolute w-[75%] sm:w-[67%] top-[10px] lg:top-[-10px]  xl:top-[-110px] right-[25px] sm:right-[45px] md:right-[66px] lg:right-[56px] xl:right-[12%]  xxl:right-[0%] object-contain z-10 animate-spin animate-duration-[90000ms] animate-ease-linear "
         />
         <Image
           src={CustomizeImgTwo}
