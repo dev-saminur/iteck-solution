@@ -18,7 +18,7 @@ const InstaTag = () => {
             {InstaData.map((item, i) => (
               <div
                 key={i}
-                className="relative w-[120px] h-[100px] group rounded-[10px] overflow-hidden bg-gray-700 mb-3"
+                className="relative w-[120px] h-[120px] lg:w-[100px] lg:h-[100px] xxl:w-[120px] xxl:h-[100px] group rounded-[10px] overflow-hidden bg-gray-700 mb-3"
               >
                 <Image
                   width={120}
