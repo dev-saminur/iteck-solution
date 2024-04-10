@@ -7,14 +7,14 @@ const AllBlogPost = () => {
   return (
     <>
       {AllNewsData.map((item, i) => (
-        <div key={i} className="my-5">
-          <Flex className=" border-b border-solid  items-center pb-5">
+        <div key={i} className="my-5 pl:ml-0 pl-4 ">
+          <Flex className="flex-wrap lg:flex lg:flex-nowrap border-b border-solid  items-center pb-5">
             <Image
               width={292}
               height={200}
               src={item.images}
               alt="BlogImg"
-              className="w-[73%] h-full mr-6 overflow-hidden rounded-[20px] object-cover  "
+              className="w-full xl:w-[73%] h-full lg:h-[200px] xxl:h-full mr-6 overflow-hidden rounded-[20px] object-cover  mb-2 lg:mb-0"
             />
 
             <div>
@@ -46,7 +46,7 @@ const AllBlogPost = () => {
                   {item.peratitle}
                 </p>
               </div>
-              <div className="mt-[50px]">
+              <div className="lg:mt-[30px] xxl:mt-[50px]">
                 <Flex className="justify-between">
                   <div className="flex items-center gap-x-2">
                     <span>{item.adminicon}</span>
