@@ -15,7 +15,7 @@ const Menubar = () => {
           <Flex className="items-center justify-center">
             <Listitem className=" group flex   relative text-white   text-xs">
               <Link
-                href="#"
+                href="/"
                 className="relative bg-[#348CB2] uppercase font-medium  p-8 border-b border-[#14E9F7] transition-all ease-in after:duration-300 z-50"
               >
                 Homes
