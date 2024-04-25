@@ -39,7 +39,7 @@ const CommonNavbar = () => {
     <>
       <div>
         <Headertop />
-        <div className="bg-gradient-to-l from-[#04A1FD]  to-[#0C46F5] lg:bg-gradient-to-l lg:from-transparent lg:to-trans lg:bg-[#010049]  lg:px-0 px-4  relative py-10 lg:py-0 ">
+        <div className="bg-gradient-to-l from-[#04A1FD]  to-[#0C46F5] lg:bg-gradient-to-l lg:from-transparent lg:to-transparent lg:bg-[#010049]  lg:px-0 px-4  relative py-10 lg:py-0 ">
           <div className={showNav ? "lg:navbar stickynav" : "navbar"}>
             <Container>
               <Flex className="  relative items-center z-50 box-border	justify-between">
