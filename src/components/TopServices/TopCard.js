@@ -56,13 +56,14 @@ const TopCard = () => {
         className="mySwiper"
       >
         {TopCardData.map((item, i) => (
-          <SwiperSlide>
-            <div
-              key={i}
-              className=" py-[30px] px-[8%] bg-[#F1F2FA] rounded-[15px] text-center mb-8 "
-            >
+          <SwiperSlide key={i}>
+            <div className=" py-[30px] px-[8%] bg-[#F1F2FA] rounded-[15px] text-center mb-8 ">
               <Link href="/" className="text-center">
-                <Image src={item.icon} className=" mx-auto mb-10 shadow-2xl" />
+                <Image
+                  alt="top-card-img"
+                  src={item.icon}
+                  className=" mx-auto mb-10 shadow-2xl"
+                />
                 <h5 className="text-[15px] xxl:text-[17px] text-[#000] mb-[15px] font-bold leading-[1.4] ">
                   {item.title}
                 </h5>
