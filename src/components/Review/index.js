@@ -124,7 +124,7 @@ const Review = () => {
           <div className="slider-container max-w-[660px] mx-auto ">
             <Slider {...settings}>
               {ReviewData.map((item, i) => (
-                <div className="max-w-[660px] text-center">
+                <div key={i} className="max-w-[660px] text-center">
                   <h5 className="text-xl text-white text-center xl:px-[90px] sm:px-[40px] lg:px-0 leading-[1.7]">
                     {item.title}
                   </h5>
