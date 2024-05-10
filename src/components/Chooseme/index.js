@@ -18,6 +18,7 @@ const Chooseme = () => {
             <div className=" flex items-center justify-center overflow-hidden">
               <Image
                 src={CircleImg}
+                alt="circle-img"
                 className="animate-spin animate-duration-[100000ms] animate-ease-linear	"
               />
             </div>
