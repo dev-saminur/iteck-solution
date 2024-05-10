@@ -14,6 +14,7 @@ const HeroBanner = () => {
                 width={1120}
                 height={550}
                 src={AboutHeroBanner}
+                alt="about-Hero-banner"
                 className="border-8 border-solid border-white rounded-[20px]"
               />
             </div>
