@@ -65,11 +65,8 @@ const AboutCulture = () => {
             }}
           >
             {AboutCultureData.map((item, i) => (
-              <SwiperSlide>
-                <div
-                  key={i}
-                  className="max-w-[455px]  relative group overflow-hidden lg:pr-[40px]"
-                >
+              <SwiperSlide key={i}>
+                <div className="max-w-[455px]  relative group overflow-hidden lg:pr-[40px]">
                   <Link
                     href="/"
                     className="relative overflow-hidden	 rounded-[20px] max-h-[500px] after:absolute after:content-[' '] after:w-[50px] after:h-[3px] after:bg-white after:top-[51%] after:duration-500 after:left-[-12%] group-hover:after:left-[35%] after:translate-[-50%] before:absolute before:content-[' '] before:w-[3px] before:h-[50px] before:bg-white before:top-[-12%] group-hover:before:top-[45%] before:left-[43%] before:translate-[-50%] before:duration-500"
