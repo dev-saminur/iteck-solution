@@ -11,6 +11,7 @@ const loading = () => {
           src={FooterLogo}
           width={200}
           height={100}
+          alt="loading"
           className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-45%] animate-[smalltobig]"
         />
       </div>
