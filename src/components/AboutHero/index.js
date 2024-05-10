@@ -46,12 +46,14 @@ const AboutHero = () => {
                     src={LineChart}
                     width={267}
                     height={243}
+                    alt="line-cart"
                     className="w-[14%]  max:w-[267px] xl:w-[267px] absolute top-0 right-0 lg:top-[50px] xl:top-0 lg:right-[-100px] xl:right-[-198px] animate-[shakeamimate] animate-infinite animate-duration-[3000ms] animate-ease-in-out animate-alternate"
                   />
                   <Image
                     src={RattingImg}
                     width={344}
                     height={258}
+                    alt="line-rating"
                     className="w-[18%] xl:w-[344px] absolute top-[86%]  lg:top-[90%] xl:top-[60%] left-0 md:left-[100px] lg:left-0 xl:left-[-70px] animate-[shakeamimate] animate-infinite animate-duration-[3000ms] animate-ease-in-out animate-alternate"
                   />
                 </div>
@@ -64,12 +66,14 @@ const AboutHero = () => {
           src={HandMeghaphone}
           width={324}
           height={536}
+          alt="line-phone"
           className="absolute top-0 left-0 w-[17%] max:w-[324px] animate-[topbottom] animate-infinite animate-duration-[4000ms] animate-delay-1000 animate-ease-in-out animate-alternate animate-fill-both "
         />
         <Image
           src={Rocket}
           width={382}
           height={482}
+          alt="line-rocket"
           className="w-[20%] xl:w-[382px] absolute top-[160px] lg:top-[200px] right-0 "
         />
       </div>
