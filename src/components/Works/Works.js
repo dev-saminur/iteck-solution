@@ -81,6 +81,7 @@ const Works = () => {
                         src={item.workimg}
                         width={457}
                         height={316}
+                        alt="work-img"
                         className="w-full h-full hover:scale-150	 hover:-rotate-6	 	 transition-all animate-ease-in-out duration-1000		"
                       />
                     </div>
