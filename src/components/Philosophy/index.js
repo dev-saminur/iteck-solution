@@ -19,9 +19,8 @@ const Philosophy = () => {
             />
             <div className="pr-0 lg:pr-[100px] mb-[70px] lg:mb-0 ">
               <h2 className="text-[30px] lg:text-[45px] font-bold text-[#212529] leading-[1.4] mb-5 z-50">
-                Itec's{" "}
+                Itec's
                 <span className="text-[#157EFB] lg:block  relative after:absolute after:content-[''] after:bottom-0 after:left-0 after:w-[65%] after:h-[40%] after:bg-[#157EFB] after:opacity-[.1]">
-                  {" "}
                   Philosophy
                 </span>
               </h2>
