@@ -25,7 +25,10 @@ const RecentPost = () => {
             Recent Post
           </h3>
           {RecentPostData.map((item, i) => (
-            <Flex className="items-center gap-x-6 group cursor-pointer border-b border-solid border-[#DDDDDD] pb-4 mb-4">
+            <Flex
+              key={i}
+              className="items-center gap-x-6 group cursor-pointer border-b border-solid border-[#DDDDDD] pb-4 mb-4"
+            >
               <div className="bg-red-400 w-[90px] h-[60px] rounded-[10px] ">
                 <Image
                   src={item.images}
