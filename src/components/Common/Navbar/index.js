@@ -141,9 +141,9 @@ const CommonNavbar = () => {
                 <Listitem className=" relative text-white    text-xs">
                   <Link
                     className="relative block bg-gradient-to-l from-[#25B8FF]  to-[#2C5CF6] uppercase font-medium  p-8 hover:border-b border-[#14E9F7] transition-all ease-in after:duration-300"
-                    href="#"
+                    href="/pages/contactus"
                   >
-                    Contact
+                    Contact Us
                   </Link>
                 </Listitem>
               </List>
