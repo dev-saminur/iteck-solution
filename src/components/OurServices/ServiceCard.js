@@ -18,6 +18,7 @@ const ServiceCard = () => {
                 src={item.icon}
                 width={80}
                 height={80}
+                alt="icons"
                 className=" mx-auto mb-10 shadow-2xl"
               />
               <h5 className="text-[17px] text-[#000] mb-[15px] px-6 font-bold leading-[1.4] group-hover:text-[#0d6efd] duration-200">
