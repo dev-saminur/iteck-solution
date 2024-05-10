@@ -64,7 +64,7 @@ const ContactForm = () => {
               <div className="flex justify-center">
                 <input type="checkbox" />
                 <span className="text-[13px] text-[#212529] ml-1">
-                  By submitting, i'm agreed to the
+                  By submitting, i am agreed to the
                   <Link href="#" className="underline">
                     Terms & Conditons
                   </Link>
