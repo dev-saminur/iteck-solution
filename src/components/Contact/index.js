@@ -30,7 +30,7 @@ const Contact = () => {
                 href="#"
                 className="text-xs   text-white py-3 px-6 border rounded-full hover:border-[#010049] hover:bg-[#010049] transition-all ease-in after:duration-300 capitalize"
               >
-                Let's Chat
+                Lets Chat
               </Link>
               <Link
                 href="#"
