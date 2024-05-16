@@ -14,7 +14,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <div>
-      <div className="relative  overflow-hidden py-[185px] bg-[#01004C] lg:bg-gradient-to-b from-[#126690]  to-[#020045] ">
+      <div className="relative  overflow-hidden py-[185px] bg-[#01004C] lg:bg-gradient-to-b from-[#147AA5]  to-[#020045] ">
         <Container>
           <div className="relative overflow-hidden z-50">
             <h1 className="text-[123px]  tracking-[75px] uppercase font-bold text-white text-center">
