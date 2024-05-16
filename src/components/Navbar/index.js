@@ -36,7 +36,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="bg-gradient-to-l from-[#04A1FD]  to-[#0C46F5] lg:bg-gradient-to-l lg:from-transparent lg:to-trans lg:bg-[#157297]  lg:px-0 px-4  relative py-10 lg:py-0">
+      <div className="bg-gradient-to-l from-[#04A1FD]  to-[#0C46F5] lg:bg-gradient-to-l lg:from-transparent  lg:bg-[#147AA5]  lg:px-0 px-4  relative py-10 lg:py-0">
         <div className={showNav ? "lg:navbar stickynav" : "navbar"}>
           <Container>
             <Flex className=" lg:px-4 xl:px-0  relative items-center z-50">
