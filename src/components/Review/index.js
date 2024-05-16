@@ -52,6 +52,14 @@ const Review = () => {
           arrows: true,
         },
       },
+      {
+        breakpoint: 375,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
     ],
     dots: true,
     fade: true,
