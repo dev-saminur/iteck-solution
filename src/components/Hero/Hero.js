@@ -68,7 +68,7 @@ const Hero = () => {
               </p>
               <Link
                 href="#"
-                className="text-base  text-white py-3 px-6 border rounded-full hover:border-[#010049] hover:bg-[#010049] transition-all ease-in after:duration-300"
+                className="text-base  inline-block text-white py-3 px-6 border rounded-full hover:border-[#010049] hover:bg-[#010049] transition-all ease-in after:duration-300"
               >
                 More About us
               </Link>
